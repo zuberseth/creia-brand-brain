@@ -1,0 +1,79 @@
+# Brand Brain — Index
+
+The codified, machine-readable version of Creia's brand and design system. Single source of truth for any agent (Lovable, Claude, Cursor, Figma, ad pipeline) producing on-brand work.
+
+**Restructured July 2026.** Three active documents plus one parked. Superseded duplicates carry a [SUPERSEDED] title prefix and are safe to archive.
+
+---
+
+## The documents
+
+| Doc | Role | Status |
+| -- | -- | -- |
+| **Brand Brain — Index** (this doc) | Entry point, routing, canonical facts | Active |
+| **Brand Bible — Creative** | Seven parts: I. The Brand · II. Copy System · III. Creative Design System · IV. The Product · V. Facts Bank · VI. Adapting & Channels · VII. Asset Register | Active — clean agent-first rewrite July 2026 (vi) |
+| **Web Design System** | creia.com implementation: components, tokens, typography, layout, motion | Active — consolidated July 2026 |
+| **[PARKED] OPS_DOC — The Ad System** | Ad agent funnel spec, genome, prompts, reward models | Parked pending rework; see banner in doc |
+
+---
+
+## Routing for agents
+
+* **The Bible's primary purpose:** adapt winning reference creatives to Creia, and generate Creia ads + emails. Not editorial work.
+* **Writing any copy** (ad, email, social, packaging, OOH) → Bible Part II (how to write), Part IV (product truth), Part V (what you may claim). Anything not Verified in Part V gets tagged [ASA CHECK], never softened or dropped.
+* **Designing any creative** → Bible Part III (+ Part IV for the spec block, Part VII for source assets).
+* **Adapting a reference creative** → Bible Part VI §30 (the adaptation checklist).
+* **Building or editing creia.com** → Web Design System. Copy on the site still follows Bible Part II.
+* **Ad pipeline work** → OPS_DOC is parked; do not generate from it. The old funnel-permission system is retired — top vs bottom of funnel is case by case. Source assets: Bible Part VII.
+* **Fact disputes** → the block below, then Bible Parts IV–V. If an asset disagrees with Part IV, the asset is wrong.
+
+## Two domains, one rule
+
+Creative follows the Bible. The website follows the Web Design System. When they appear to conflict, scope decides — the split is intentional (calmer site, louder creative). Web body type is Hubot Sans Variable, creative running text is Area Extended; web palette is neutral-only, creative runs the full palette plus the pop set.
+
+---
+
+## Canonical facts (settle disputes here)
+
+* Domain: **creia.com** · Sender: **team@creia.com** · Instagram: **@drinkcreia**
+* From-names: brand emails **Creia**; founder emails **Faith from Creia**, signed Faith, Creia Founding Team (never "Founder")
+* Composition per 8g sachet (label-confirmed July 2026): **5g 200-mesh ultra-micronised creatine monohydrate · 350mg pink Himalayan salt · 60mg magnesium · natural lemon flavouring (Dirty Lime) · citric acid · stevia extract**. "400mg electrolytes" = salt + magnesium, approved. 0 calories, all-natural
+* Spec block: 5g Creatine · 400mg Electrolytes · 0 Calories · All-Natural Ingredients
+* Full pricing: 30-day **£49.99 one-time / £39.99 sub**; 3-month **£129.99 one-time / £79.99 sub**. Email prices are discounted offers, never list
+* Trial: 5 days, 5 sachets, **free**, no auto-subscribe, **£3.95 postage** at checkout (kept out of email copy). 10-day trial £8.95, free shipping
+* Beef equivalence: **one kilo** of raw beef = one sachet's 5g (the site's "two kilos" is being corrected). High-performing fact
+* Protocol: one sachet a day in cold water; flexible dosing to two sachets on demanding days ("One sachet a day for extra energy. Two a day to turn into megamind.")
+* Dimensions: box 12.5 × 11 × 8.5 cm (125 × 110 × 85 mm); sachet 120 × 35 × 10 mm
+* Tagline: **Beyond the gym.** Internal pillars: Cognition. Energy. Recovery. Consumer phrasing: Brain power. Clean energy. Lean definition
+* Audiences: primary women 24–34 UK urban; secondary yummy mummies (mid-30s–mid-40s, same creative world); tertiary the cool guys (adopt, not pursued)
+* Copy references: **Nothing + David (protein)**. Byredo and Skims are retired as references
+* Type: **Area Extended** default (primarily Bold; lower weights for body); **Hubot Sans only for small text/subtext**; Instrument Serif retired. Font licence for AI/render use confirmed (Jul 2026)
+* Logo "black" = navy #0D191F — confirmed intentional (Jul 2026)
+* Shipping: same-day dispatch before 1pm Mon–Fri; next-day UK delivery
+* Product renders + brand assets: `Documents/Creia Assets` (see Bible Part VII and `creia_assets_index.md`)
+* Founder / casting face: Faith Charnock (in-range, rights cleared) — `Creia Assets/Casting`
+
+---
+
+## OPS_DOC — parked
+
+Set aside pending rework; predates the July 2026 Bible revisions and contradicts them (auto-fail word lists, no wink/equivalence hooks, no [ASA CHECK] workflow, no trial in the offer architecture, stale CTAs and visual rules, and a funnel-permission system the Bible has since retired). The drift list lives in the OPS_DOC banner.
+
+## Gaps and open questions
+
+* **Assets** — Bible Part VII. Done: product renders, logos (navy confirmed), fonts (licence confirmed), safe zones, dimensions, colour reference, founder casting reference. Closed by decision (Jul 2026): transparent box renders, extra casting range. Remaining: photography/prop libraries (homes ready: `Props/` + the three `Visual…` folders), moodboard mirror, logo lockups + misuse sheet.
+* Design-system cohesion pass — remaining core: resolve pop-colour within the dark style and unify the three visual registers. (Font-usage rule, safe-zone both-variants rule and the reference refresh are now folded into the Bible.)
+* OPS_DOC rework
+* Asset errata: two infographics carry factual/typo errors (Bible Part V §28); the site's "two kilos" line needs correcting to 1kg
+* Testimonials — parked by decision; social-proof slot stays empty until real reviews exist
+* Counsel pass on the §27 infographic claims (bulk myth, water/bloat, brain dosing) — currently [ASA CHECK]
+
+## Changelog
+
+* **July 2026 (vii):** Bible §29 expanded with the full live 90-days page (creia.com/90-days-with-creia) — phase-by-phase science and quotable lines, "provably" flagged for ad reuse. Asset decisions logged: transparent box renders not needed; logo navy #0D191F confirmed intentional; font licence confirmed; extra casting range skipped for now. Aesop/Byredo line scrubbed from the Web Design System; OPS_DOC drift banner updated (stale reference set, funnel system removal).
+* **July 2026 (vi):** Bible fully rewritten clean from Zuber's annotated markdown. Agent-first purpose note (adapt winning creatives + generate ads/emails, not editorial); contractions throughout the doc; noun-poetry strategies retired (cultural adjacency, sensory misdirection, quiet specificity, flat ending) with the worst examples moved to Bad; funnel-permission system removed (case-by-case); Nothing + David made primary copy references (Byredo test → Nothing/David test); yummy mummies added as secondary audience (cool guys → tertiary); myth-buster voice recast as confident/playful/cool; shoot rules relaxed (cool gym objects, vintage gymwear, tasteful before/after); Canva section added for email + carousel skeletons; canon examples cleaned and Zuber's new lines added (caffeine, coffee-signal, megamind); David added to corpus. Part VI renamed Adapting & Channels; Part VII renumbered (§33–34).
+* **July 2026 (v):** Product-render masters produced and logged (Bible Part VII). Logos, fonts, safe-zone templates, dimensions, colour reference, and founder casting reference added to `Creia Assets`. Testimonials parked by decision.
+* **July 2026 (iv):** Infographic-carousel facts folded into Bible Part V (§24 cognition/body claims promoted to Verified per GC; §27 new claims pending counsel). Asset Register added as Bible Part VII. Trial postage corrected to £3.95. Myth-buster and educational-carousel formats canonised.
+* **July 2026 (iii):** Bible restructured into parts. Product composition added from confirmed label. Facts & Statistics Bank added. Canonical pricing settled; 1kg beef canon. Liquid template links fixed to creia.com.
+* **July 2026 (i–ii):** copy gates loosened to defaults; [ASA CHECK] workflow; wink register + Nothing reference + pop set; email titles canonised ("Otw!" exception); Web Design System consolidated; OPS_DOC parked; Index rewritten.
+* **April 2026:** Brain established.
