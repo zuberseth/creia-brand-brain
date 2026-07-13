@@ -50,8 +50,8 @@ Creative follows the Bible. The website follows the Web Design System. When they
 * Type: **Area Extended** default (primarily Bold; lower weights for body); **Hubot Sans only for small text/subtext**; Instrument Serif retired. Font licence for AI/render use confirmed (Jul 2026)
 * Logo "black" = navy #0D191F — confirmed intentional (Jul 2026)
 * Shipping: same-day dispatch before 1pm Mon–Fri; next-day UK delivery
-* Product renders + brand assets: `Documents/Creia Assets` (see Bible Part VII and `creia_assets_index.md`)
-* Founder / casting face: Faith Charnock (in-range, rights cleared) — `Creia Assets/Casting`
+* Product renders + brand assets: this repo, folders at root (see Bible Part VII and `creia_assets_index.md`)
+* Founder / casting face: Faith Charnock (in-range, rights cleared) — `Casting/`
 
 ---
 
@@ -70,6 +70,7 @@ Set aside pending rework; predates the July 2026 Bible revisions and contradicts
 
 ## Changelog
 
+* **July 2026 (viii):** Brain migrated to the private GitHub repo zuberseth/creia-brand-brain — docs + assets in one place, git history as the changelog from here on. Linear docs retired as [MOVED] mirrors.
 * **July 2026 (vii):** Bible §29 expanded with the full live 90-days page (creia.com/90-days-with-creia) — phase-by-phase science and quotable lines, "provably" flagged for ad reuse. Asset decisions logged: transparent box renders not needed; logo navy #0D191F confirmed intentional; font licence confirmed; extra casting range skipped for now. Aesop/Byredo line scrubbed from the Web Design System; OPS_DOC drift banner updated (stale reference set, funnel system removal).
 * **July 2026 (vi):** Bible fully rewritten clean from Zuber's annotated markdown. Agent-first purpose note (adapt winning creatives + generate ads/emails, not editorial); contractions throughout the doc; noun-poetry strategies retired (cultural adjacency, sensory misdirection, quiet specificity, flat ending) with the worst examples moved to Bad; funnel-permission system removed (case-by-case); Nothing + David made primary copy references (Byredo test → Nothing/David test); yummy mummies added as secondary audience (cool guys → tertiary); myth-buster voice recast as confident/playful/cool; shoot rules relaxed (cool gym objects, vintage gymwear, tasteful before/after); Canva section added for email + carousel skeletons; canon examples cleaned and Zuber's new lines added (caffeine, coffee-signal, megamind); David added to corpus. Part VI renamed Adapting & Channels; Part VII renumbered (§33–34).
 * **July 2026 (v):** Product-render masters produced and logged (Bible Part VII). Logos, fonts, safe-zone templates, dimensions, colour reference, and founder casting reference added to `Creia Assets`. Testimonials parked by decision.

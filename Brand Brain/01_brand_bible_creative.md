@@ -522,7 +522,7 @@ Never train on: supplement brand copy; wellness LinkedIn; Meta Ad Library scrape
 
 # PART VII — ASSET REGISTER
 
-What the brand is built from, where it lives, and what's still missing. This part exists so an automated pipeline can locate a real, on-brand asset instead of inventing one. Files live in `Documents/Creia Assets` (see `creia_assets_index.md`).
+What the brand is built from, where it lives, and what's still missing. This part exists so an automated pipeline can locate a real, on-brand asset instead of inventing one. Files live in this repo — the asset folders sit at the repo root next to `Brand Brain/` (see `creia_assets_index.md`). On Zuber's machine the checkout is `Documents/Creia Assets`.
 
 ## 33. Asset classes
 
