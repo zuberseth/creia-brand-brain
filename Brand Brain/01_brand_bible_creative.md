@@ -2,13 +2,15 @@
 
 **Read this first (you're an agent, this doc is for you).** The primary purpose of this bible is (1) taking winning reference creatives — ads, emails, formats that convert — and adapting them to Creia, and (2) generating Creia ads and emails from scratch. That's the job. It's not editorial work. If you're choosing between a line that sounds like poetry and a line that sells the sachet, pick the one that sells.
 
+When asked to copy an ad or batch, the default deliverable is both the image-generation prompt or output and the exact copy deck for every creative; §30 defines the return shape.
+
 Seven parts: **I. The Brand** (who we are), **II. The Copy System** (how we write), **III. The Creative Design System** (how we look), **IV. The Product** (what we sell), **V. The Facts Bank** (what we can say), **VI. Adapting & Channels** (how we borrow, where things run), **VII. The Asset Register** (what we build with).
 
 Routing: copy work runs on II, IV and V. Design work runs on III, IV and VII. Read I regardless.
 
 Default posture: write the strongest version, tag anything unverified with [ASA CHECK], fix after the asset exists. A good line that needs a legal tweak beats no line.
 
-**Revision.** *July 2026 (vi):* full clean rewrite from Zuber's annotated markdown. Agent-first framing; contractions in the doc itself; noun-poetry strategies retired; funnel-permission system removed; references updated (Nothing + David are the copy references, Byredo/Skims out); yummy mummies added as secondary audience; shoot rules relaxed (cool gym objects, vintage gymwear, tasteful before/after). *July 2026 (vii):* §29 expanded with the full live 90-days page; asset decisions logged (transparent box renders not needed, logo navy confirmed intentional, font licence confirmed, extra casting range skipped for now). Older history lives in Linear's version history.
+**Revision.** *July 2026 (vi):* full clean rewrite from Zuber's annotated markdown. Agent-first framing; contractions in the doc itself; noun-poetry strategies retired; funnel-permission system removed; references updated (Nothing + David are the copy references, Byredo/Skims out); yummy mummies added as secondary audience; shoot rules relaxed (cool gym objects, vintage gymwear, tasteful before/after). *July 2026 (vii):* §29 expanded with the full live 90-days page; asset decisions logged (transparent box renders not needed, logo navy confirmed intentional, font licence confirmed, extra casting range skipped for now). Older history lives in Linear's version history. *July 2026 (viii):* AI production protocol added; three text modes and an ad-copying output contract introduced; final Creia type and standalone wordmarks moved to post; on-image selling CTAs removed; 4:5/9:16 siblings, tighter colour/flash rules, split-screen permission and production QA added.
 
 ---
 
@@ -79,7 +81,7 @@ Optimum Nutrition, MyProtein, Bulk, Huel, Ghost, Gorilla Mind; any pre-workout, 
 * We borrow format, never content. Nothing's the standing exception: their lines are fair game when they fit
 * Category-generic copy is invisible copy
 * Generate first, flag second. A strong line with an [ASA CHECK] tag beats a safe line, and both beat no line
-* Rules are defaults. Deviations are declared, not forbidden
+* Rules are defaults unless marked hard or QA-gated. Deviations from defaults are declared; hard gates aren't optional
 * Fun sells. The joke is a conversion tool, not a compromise. Delivered flat it's high fashion; delivered loud it's a smoothie carton
 * Simple beats clever. If she has to decode it, it's gone
 * Creia is beyond the gym
@@ -193,7 +195,7 @@ Headlines should: run under 8 words (12 when an offer or claim is embedded); avo
 
 **Founder emails.** From "Faith from Creia" (team@creia.com), signed Faith, Creia Founding Team — never "Founder". Full sentences, plain and human, no design, no imagery, text links.
 
-**Ads / carousels.** Headline + spec callouts + product hero or scene. The educational carousel is a canon format (Part V facts + Part III design): a titled myth or topic, 4–6 slides, mechanism explained in the Creia voice, close on the wordmark or a single CTA. Spec block (Part IV) may run as display lines without full stops. One wink max.
+**Ads / carousels.** Headline + spec callouts + product hero or scene. Final Creia copy is delivered separately and assembled under §§12 and 15; the controlled native-text exception lives in §12. On-image selling CTAs, buttons, pills and freestanding GET CREIA copy are out — paid campaigns use the platform's native CTA outside the creative. The educational carousel remains canon: 4–6 slides, one mechanism, closing on the product, a final information slide or an approved wordmark added in post. Spec blocks may run without final full stops. One wink max.
 
 **Website.** Copy follows this system; visual implementation follows the Web Design System doc, not Part III.
 
@@ -243,7 +245,8 @@ Three canon registers:
 
 1. **Editorial dark/flash.** Teller/Sorrenti register. Carried and nocturnal: a clutch, a bar top, denim, a glass, a bag.
 2. **Clean studio product-hero.** The 2026 ad set: sachet centred on white or true black, flanking spec callouts, or staged with one witty prop. The discipline lives in the negative space and the type.
-3. **The educational infographic.** Quieter, science-forward, for carousels: textured or clinical grounds, editorial type, one supporting scientific image (brain scan, cellular macro, Venn), a single colour accent. Bright/clinical or dark/moody both valid; still no beige, no stock, no chart-junk.
+3. **The educational infographic.** Quieter and science-forward: true white or true-to-near-black grounds, editorial type added in post, one supporting scientific image and disciplined monochrome structure. The model may build diagrams, timelines, tables, nodes and connectors; readable copy follows §12's text modes. Bright/clinical or dark/high-contrast both work. Still no beige, grey wash, stock or chart-junk; pop colour follows §14.
+
 
 ## 12. Composition and layout patterns
 
@@ -253,14 +256,34 @@ Three canon registers:
 * **Ingredient grid:** 2×2 tiles, image + name + one-line reason (the "What's in my bag" pattern; mirrors the site's What's Inside)
 * **Spec callout block:** 5g Creatine / 400mg Electrolytes / 0 Calories flanking the product (vertical on 4:5, row on 9:16)
 * Zig-zag editorial: alternating image/text bands for education emails
-* Every creative ships in both formats: post 4:5 and story 9:16 (safe-zone templates in the Asset Register)
+* Every concept produces two siblings: post 4:5 and story 9:16. Recompose each for its frame and safe zone; never crop one out of the other.
+
+### AI production protocol
+
+Higgsfield, or the active image model, makes the photograph: scene, casting, lighting, physical props, product placement and composition. The agent chooses one text mode before prompting:
+
+* **POST_TEXT — default.** Generate no intended final text. Return every headline, callout and supporting line separately, with a placement map, for Area Extended assembly in post.
+* **STRUCTURAL_TEXT — designed information.** For tables, diagrams, timelines and labelled boxes (Day 1 / Day 30, for example), the model may build the geometry and rough text scaffolding. Return the exact copy separately and replace every readable label in post.
+* **NATIVE_TEXT — text is the format.** The model may render exact text only when it sits inside a recognisable interface, conversation, screen, document or physical object; is essential to the reference; and would become less authentic in Area Extended. ChatGPT conversations, social polls, messages, search results, notes and reviews are the pattern. Return the intended text separately for verification.
+
+The native-text gate fails ordinary ad headlines, spec callouts, designed infographic labels, selling CTAs, standalone Creia signatures and product-packaging text. Run the gate automatically. An explicit user request to generate native text triggers the check but doesn't waive it. Native interface controls are contextual UI, not Creia CTAs; the exception waives typography only, never colour, claims or the real-testimonials-only rule.
+
+Non-negotiables: use or composite the exact product master when packaging distorts; add any standalone Creia signature in post from the approved reversed-R asset; never render an on-image selling CTA; and make both aspect-ratio siblings. The generation bundle is the source for layout only, the exact product master, the correct safe-zone guide and any available flash/prop reference; guides inform composition and never appear in the output.
+
+**Workflow:** analyse the reference → choose the text mode → write or run separate 4:5 and 9:16 prompts → return the full copy deck and placement map → grade the images → correct the product → add final type and wordmark in post → run the gates below.
+
+### Production gates
+
+**Generated image:** both siblings exist; the declared text mode was followed; no generated standalone wordmark or selling CTA appears; the product can be made exact; blacks, flash and contrast pass §§14 and 16; and, if a pop is used, one pop colour belongs to a minimal number of discrete physical props.
+
+**Final export:** every non-native text element uses approved Area Extended (Hubot Sans only where §15 allows); NATIVE_TEXT matches the copy deck exactly, with no garbling; any standalone signature and product packaging use master assets; no on-image selling CTA appears; both safe zones pass; and every claim is Verified or carries [ASA CHECK] in the copy deck. Failed native text is regenerated or rebuilt in post, never shipped.
 
 ### Canva builds (emails + carousels)
 
 Emails and carousels are built in Canva (via the connector). The two canon skeletons:
 
 * **Email skeleton (canon, from the live flow):** small wordmark → Area Extended headline → hero image → centred body stanzas → pill CTA → creia.com | @drinkcreia → oversized cropped wordmark as footer.
-* **Carousel skeleton (canon, from the infographics):** cover (title only, one hero image) → premise → mechanism/proof slides → close on wordmark or single CTA. 4–6 slides, one idea per slide. Devices in use: numbered node timelines (01–02–03), two-column label/definition rows, outlined Venn diagrams, callout markers with thin connector lines.
+* **Carousel skeleton (canon, from the infographics):** cover (title only, one hero image) → premise → mechanism/proof slides → close on product, final information or an approved wordmark added in post — never an on-image selling CTA. 4–6 slides, one idea per slide. Devices in use: numbered node timelines (01–02–03), two-column label/definition rows, outlined Venn diagrams, callout markers with thin connector lines.
 
 ## 13. Object and prop library
 
@@ -278,34 +301,51 @@ Recurring, reusable scene objects — a casting sheet for things:
 * Supporting science imagery for carousels: pale brain cross-section, cellular/oil-bubble macros, outlined Venn
 * Chrome trays, cutlery, stainless plates, red candles, mirrored surfaces, wired headphones, denim pockets, bedsheets, white tank tops, a watch, a clutch
 
-One prop, one claim, per asset.
+One visual idea and one claim per asset; use the fewest props the idea needs.
 
 This written list stands in until the real prop library exists as images. Home when it does: `Creia Assets/Props` (folder's ready, currently empty).
 
+
 ## 14. Colour (creative)
 
-* Black — deep, full, no-grey-cheating
-* Stainless and chrome
-* Flash white; clean white studio grounds for product-hero
-* Blood red — sparingly, always punctuation
-* Navy — the logo colour on the sachet
+* Deep, full black — true-to-near-black, no grey cheating
+* Flash white; true white studio grounds for product-hero
+* Stainless and chrome; grey only when it's a real material such as steel or concrete
+* Navy only where the approved product or wordmark puts it — never as environmental permission
 * Skin tones and denim
-* **The pop set:** lime green (flavour), pink (prop register), blood red, yellow as candidates. One pop per asset, two at most, always against black/white/chrome. The pop is punctuation with a job — never the ground
-* Off-limits as a base: sage-rose-beige wellness tones, gradients, neon-everything. A pastel prop is fine; a pastel world is not
+* Lime, pink, blood red and yellow are the pop candidates
+* An asset may be fully monochrome
+* If it uses a pop: **One pop colour per asset. It must belong to a minimal number of discrete physical props.**
+* Pop colour never becomes ambient light, a colour gel, background, wall, floor, foliage, shadow, typography, wordmark treatment or interface decoration
+* Dirty Lime names the flavour; it never authorises a lime-coloured environment
+* Preferred build: the pop prop against true black, flash white, chrome or skin
 
-*Note (pending design-system cohesion pass): there's no strict creative palette — imagery follows the brand vibe, not a fixed swatch set. Fixed colours are product/logo only: logo navy #0D191F / white, sachet silver, box pure white with black text. The "pop of colour within the dark style" question is open.*
+Hard exclusions: green colour cast; coloured ambient light; grey studio sweep; charcoal background; lifted or matte blacks; haze, bloom or fog; low-contrast film grade; pastel worlds; gradients; neon-everything. Grain never lifts the black point.
+
+There is no fixed creative swatch palette beyond the product/logo colours. Placement is the system: colour lives in real objects, not across the image.
+
 
 ## 15. Typography (creative)
 
-* Display and wordmark: Area Extended Semibold or Bold; running text on creative surfaces: Area Extended regular
-* Never a serif as display; never italic; Instrument Serif is retired everywhere
-* Typography as architecture: large, widely tracked, confident; all-caps allowed for captions
-* Typographic play available Nothing-style: lowercase naming, spaced parentheses ("creia ( 5g )"), numbered sections ("( 1 )") — a system, not a decoration
-* **Font usage rule:** Area Extended is the default for everything, primarily **Bold**; body/running text is Area Extended in a **lower weight** (Regular/Thin), not Hubot Sans; **Hubot Sans only for small text/subtext**. Font sizing isn't fixed — text must be legible, size set by the tool/designer building the creative.
+Final Creia advertising type is assembled in post from the installed fonts. NATIVE_TEXT is the only generated text that may remain at export; STRUCTURAL_TEXT is always replaced.
+
+* Area Extended ExtraBold or Bold for hero display; Bold for headings, subheads and callouts; Regular for running text; Thin for light large-format subtext
+* Hubot Sans only for fine print, legal and genuinely tiny supporting text
+* Never serif display, never italic; Instrument Serif remains retired
+* Typography as architecture: large, widely tracked, confident; all-caps available for captions
+* Nothing-style play remains available — lowercase naming, spaced parentheses ("creia ( 5g )"), numbered sections ("( 1 )") — as a system, not decoration
+* Font sizing isn't fixed; the tool or designer sets it for legibility
+
+"Creia" inside a sentence follows the surrounding type. A standalone brand signature always uses the approved reversed-R SVG or transparent PNG; it is never typed in Area Extended or generated by an image model. Native-text text uses the depicted interface or object's own style only inside that interface or object. All other visible final copy uses the rules above.
+
+Maintain one typography specimen showing ExtraBold hero, Bold callout, Regular body and Thin secondary text with approved tracking, line height and capitalisation. Any unapproved generated or approximated final type fails QA.
+
 
 ## 16. Lighting
 
-Direct hard on-camera flash; available light only for bed/morning-after and candlelit scenes; clean even studio light for product-hero; never ring-light, softbox, or influencer-beauty lighting. Grain and film look encouraged.
+Editorial photography uses direct on-axis flash with ambient exposure suppressed by roughly two stops: bright specular highlights, hard-edged shadows and true-to-near-black negative space. Clean product-hero work may use controlled even light on true white or true black, but keeps crisp edges and decisive contrast.
+
+Grey belongs only to real chrome, steel or concrete. Apply grain after contrast; it must never lift the black point or create a matte wash. Reject cinematic fill, soft shadow transitions, beauty lighting, diffused key light, ring lights, softboxes, coloured ambient light and moody low-contrast grading.
 
 ## 17. Casting
 
@@ -324,7 +364,8 @@ The real filter: anything goes if it's on brand. The list below is how it usuall
 * **Gym equipment — allowed when the object itself is cool.** A full silver dumbbell, a really nice black leather gym bag: yes. A rubber hex dumbbell and a branded holdall: no.
 * **Gymwear — no tight matching sets, no sports-bra-and-leggings gym fit.** Vintage gymwear is the move instead; cooler garments in the gym are the shift and Creia's ahead of it.
 * **Before/after — allowed when done tastefully.** Editorial, not transformation-ad. If it reads as a weight-loss ad, kill it.
-* Still never: powder macros as hero (a controlled snow/powder styling is fine); split-screen comparison ads; graphic "scroll-stopper" treatments; price flags or discount badges on primary creative (a text headline stating the free trial is not a price flag); window-light flat-lay shelfies; motivational typography over images; models over 28 in lead roles; smiling-to-camera leads.
+* **Split-screen — allowed.** There's no special prohibition; judge it under the same brand, product, claims, casting and quality rules as any other format.
+* Still never: powder macros as hero (a controlled snow/powder styling is fine); generic clickbait overlays with no structural reason; price flags or discount badges on primary creative (a text headline stating the free trial is not a price flag); window-light flat-lay shelfies; motivational typography over images; models over 28 in lead roles; smiling-to-camera leads.
 
 ---
 
@@ -486,16 +527,34 @@ Note: the page still runs the older not-a-stimulant lines ("It doesn't hit you. 
 
 No funnel-permission system lives here anymore. Top vs bottom of funnel gets decided case by case, per asset; the only hard rule is that everything sounds and looks like Creia.
 
+
 ## 30. Borrowing and adapting creatives (the core job)
 
-We borrow format freely — compositional moves, hook structures, placement shapes, proven scroll-stopping patterns (stat overlays, single-object-on-surface, hand-in-frame, pop-against-monochrome, the educational carousel). The brand system is what stops borrowing becoming imitation. We never borrow: avoid-list language, category visual cliches, the source ad's tone, competitor claims, foreign base palettes. Nothing is the standing exception: register and lines transfer directly when they fit the sachet better ("Your new party pill").
+We borrow format freely — composition, hook mechanics, placement shapes and proven scroll-stopping patterns. The brand system stops borrowing becoming imitation. We never borrow avoid-list language, category clichés, the source tone, competitor claims or foreign base palettes. Nothing is the standing exception: its register and lines transfer when they fit the sachet better ("Your new party pill").
 
-**Adaptation checklist — when remaking a reference creative as Creia:**
+### Default deliverable when copying ads
 
-1. Keep the bones: layout, hook mechanics, format.
-2. Swap the skin: product (Part VII renders), type (§15 font rule), colour world (§14), casting (§17).
-3. Rewrite every word in the Creia voice from Parts II and V. Never keep source wording.
-4. Run the swap test (§1) before it ships.
+When asked to copy one ad or a batch, the agent must produce the image-generation work **and** the corresponding copy. The task isn't finished if either is missing. For each source, return:
+
+1. **Reference read:** source ID plus the layout, hook and structural devices being kept.
+2. **Text mode:** POST_TEXT, STRUCTURAL_TEXT or NATIVE_TEXT, with one-line reasoning.
+3. **Inputs:** product master plus the relevant lighting, prop and safe-zone references.
+4. **4:5 prompt:** written for the feed composition.
+5. **9:16 prompt:** independently reflowed for story, not copied from 4:5.
+6. **Copy deck:** a table of every exact line, its placement, style and claims status. [ASA CHECK] is metadata, never artwork copy.
+7. **Assembly map:** where copy, product corrections and any wordmark go in post.
+8. **Checks:** claims status and the relevant §12 production gates.
+
+Each prompt must stand alone without Higgsfield having read this bible: include composition, aspect ratio, lighting, casting, props, product handling, the selected text-mode behaviour and negative constraints. If direct access exists, run the prompts and still return them with the copy deck; otherwise return ready-to-paste prompts. For batches, keep a one-to-one mapping between each reference, prompt pair, output and copy deck.
+
+**Adaptation checklist:**
+
+1. Keep the bones: layout, hook mechanics, format and necessary structure.
+2. Swap the skin: exact Creia product, §14 colour world, §16 lighting and §17 casting.
+3. Rewrite every word from Parts II and V; never keep source wording.
+4. Apply §12: choose the text mode, generate both siblings, then assemble final type/product/wordmark.
+5. Discard source colour unless it maps to an approved Creia physical prop.
+6. Run the swap test (§1), claims workflow and production gates before export.
 
 Saturation alone doesn't reject a format: crowded + strongly differentiated = launch; crowded + indistinguishable = reject; uncrowded + distinctive = launch with novelty bonus. No slop track: there's no parallel system of competitor ads lightly skinned with the Creia logo.
 
@@ -503,6 +562,7 @@ Saturation alone doesn't reject a format: crowded + strongly differentiated = la
 
 * **Meta feed (4:5):** single image or carousel; the image carries 80% of the work.
 * **Stories (9:16):** looser; UGC or pseudo-UGC allowed.
+* **Paid-social CTA rule:** selling CTAs live in the platform's native interface, never inside the creative. Contextual controls inside approved NATIVE_TEXT formats aren't selling CTAs.
 * **Reels/TikTok:** UGC-led and flash-editorial-led. No branded graphics, no captions-as-hooks, no "wait for it."
 * **Carousels:** the educational format (Part III §12) — myth-busters, mechanism explainers, dosing.
 * **Pinterest:** boards as editorial.
@@ -529,33 +589,35 @@ What the brand is built from, where it lives, and what's still missing. This par
 | Class | What it is | Status |
 | -- | -- | -- |
 | Product renders | The silver sachet (navy wordmark); the 30-pack box | **DONE (Jul 2026).** Master cutouts in `Creia Assets/Product`, named `creia_<sku>_<view>_<bg>_<res>.png`, with a manifest. Covers: single sachet (transparent), trial 5-sachet, 30-day box (open-front, closed-front, closed-angle, box-with-sachets), 90-day 3-box. All neutral white 2K except the transparent sachet |
-| Logo / wordmark | The "creia" logotype (reversed-R script) | **DONE.** SVG (vector) + transparent PNG, black + white, in `Creia Assets/Logo`. Black vector is navy #0D191F — confirmed intentional (Jul 2026) |
-| Fonts | Area Extended (display), Hubot Sans (subtext) | **DONE.** 4 Area Extended + 2 Hubot Sans weights in `Creia Assets/Fonts`; usage rule captured (Part III §15). Licence for AI/render use confirmed (Jul 2026) |
-| Safe-zone templates | Post 4:5 + Story 9:16 text-safe guides | **DONE.** `Creia Assets/Safe zones + Aspect ratios`. Rule: every creative produced in both variants |
-| Colour reference | Fixed product/logo colours only | **DONE.** No strict creative palette; logo navy/white, sachet silver, box white + black text (`creia_assets_index.md`) |
+| Logo / wordmark | The "creia" logotype (reversed-R script) | **DONE.** SVG + transparent PNG, black/navy + white, in `Creia Assets/Logo`. Post-production masters only; never image-generated |
+| Fonts | Area Extended (primary), Hubot Sans (tiny supporting text) | **DONE.** 4 Area Extended + 2 Hubot Sans weights in `Creia Assets/Fonts`; licence confirmed. Final Creia ad type is assembled in post (§15) |
+| Safe-zone templates | Post 4:5 + Story 9:16 text-safe guides | **DONE.** `Creia Assets/Safe zones + Aspect ratios`. Every concept gets separately composed siblings, not crops |
+| Colour reference | Fixed identity colours + §14 placement rules | **DONE.** Logo navy/white, sachet silver, box white + black text. Operational contrast and prop boards still needed |
 | Dimensions | Physical box + sachet sizes | **DONE.** Box 12.5×11×8.5cm; sachet 120×35×10mm |
 | Casting references | On-spec model/face references | **DONE (by decision).** Faith Charnock (founder), on-spec, rights cleared, in `Creia Assets/Casting`. Extra range skipped for now (Jul 2026) |
 | Photography library | Shot editorial + product-hero images | Scattered; no catalogued library |
 | Prop/scene library | The object library (Part III §13) | Defined in words; image home ready at `Creia Assets/Props` (empty) |
-| Visual reference boards | On-brand ad/email references + anti-references | Folders ready, currently empty: `Creia Assets/Visual ad References`, `Visual email references`, `Visual Anti-references` |
+| Visual reference boards | Ad/email references; flash, black-level, pop-prop and anti-references | Folders ready but unfilled: `Creia Assets/Visual ad References`, `Visual email references`, `Visual Anti-references` |
+| Typography specimen | ExtraBold hero, Bold callout, Regular body, Thin secondary; tracking/line-height/case examples | **NEEDED.** Post-production + QA reference |
+| Production templates | Editable 4:5 + 9:16 assembly templates for type, product correction, wordmark and safe zones | **NEEDED** |
 | Email templates | Klaviyo designed template; Faith plain-text; two order-confirmation .liquid files | In use; .liquid links corrected to creia.com |
 | Infographic carousels | 5 published (Coffee vs Creatine, Creatine Bulk, Beyond the Gym, Dosage Dilemma, Weight/Water) | Published; two carry errata (Part V §28) |
 | Ad set | The 2026 stills (Creatine perfected / Can't commit / kilo of beef / salt-transport) | In use |
 | Moodboard | Cosmos board (cosmos.so/zuberr/creia1) + @drinkcreia IG | Referenced; not mirrored into the brain |
 
+
 ## 34. Brand assets — status and what's still needed
 
-Done: product renders, logos (SVG+PNG, navy confirmed intentional), fonts (licence confirmed), safe-zone templates, dimensions, colour reference, casting reference (founder).
+Done: product masters, approved wordmarks, installed fonts and licence, safe-zone guides, dimensions, fixed identity colours and the current casting reference.
 
-Closed by decision (Jul 2026): transparent box renders (not needed); extra casting range (skip for now); testimonials (slot stays empty until real reviews exist).
+Closed by decision (Jul 2026): transparent box renders; extra casting range for now; testimonials until real reviews exist; on-image CTA components (not used).
 
 Still open:
 
-1. **Logo lockup / cropped-footer variants.**
-2. **Tagged photography library** — approved shots by register and prop/scene.
-3. **Reference images for the prop/scene library** — one approved frame per named scene, into `Creia Assets/Props`.
-4. **Visual reference boards filled** — on-brand ad/email examples and anti-examples into the three `Visual…` folders.
-5. **Moodboard mirrored into the brain** — key Cosmos/IG frames saved + tagged.
-6. **Logo clear-space & misuse sheet.**
+1. **Production system** — Area Extended typography specimen and editable 4:5/9:16 assembly templates.
+2. **Logo finishing** — lockup/cropped-footer variants plus clear-space and misuse sheet.
+3. **Tagged image library** — approved photography and one reference frame per §13 prop/scene.
+4. **Reference boards** — ad/email examples, direct-flash lighting, contrast/black levels, pop-colour props and visual anti-references.
+5. **Moodboard mirror** — key Cosmos/@drinkcreia frames saved into the brain and tagged.
 
-**Bottom line for generation readiness:** product identity, logo, type, safe zones, colour and casting are anchored, and the licence/colour questions are closed. Remaining work is library depth (photography/prop images) and the design-system cohesion pass, not core identity.
+**Bottom line for generation readiness:** photography, casting, physical composition and structural graphics are ready to generate. Final Creia type, standalone wordmarks, packaging corrections, colour grade and safe-zone compliance are deterministic post-production. NATIVE_TEXT is the only generated text that may remain at export and must pass §12's gate.
