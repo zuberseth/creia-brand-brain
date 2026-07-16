@@ -545,13 +545,13 @@ When asked to copy one ad or a batch, the agent must produce the image-generatio
 7. **Assembly map:** where copy, product corrections and any wordmark go in post.
 8. **Checks:** claims status and the relevant §12 production gates.
 
-Each prompt must stand alone without Higgsfield having read this bible: include composition, aspect ratio, lighting, casting, props, product handling, the selected text-mode behaviour and negative constraints. If direct access exists, run the prompts and still return them with the copy deck; otherwise return ready-to-paste prompts. For batches, keep a one-to-one mapping between each reference, prompt pair, output and copy deck.
+Each prompt must stand alone without Higgsfield having read this bible: include composition, aspect ratio, lighting, casting, props, product handling, the selected text-mode behaviour and negative constraints. A NATIVE_TEXT prompt includes the exact native copy inside each aspect-ratio prompt as well as in the copy deck. If direct access exists, run the prompts and still return them with the copy deck; otherwise return ready-to-paste prompts. For batches, keep a one-to-one mapping between each reference, prompt pair, output and copy deck.
 
 **Adaptation checklist:**
 
 1. Keep the bones: layout, hook mechanics, format and necessary structure.
 2. Swap the skin: exact Creia product, §14 colour world, §16 lighting and §17 casting.
-3. Rewrite every word from Parts II and V; never keep source wording.
+3. Rewrite every word from Parts II and V; never keep source wording, except a verified genuine Creia review or testimonial intentionally supplied for verbatim use.
 4. Apply §12: choose the text mode, generate both siblings, then assemble final type/product/wordmark.
 5. Discard source colour unless it maps to an approved Creia physical prop.
 6. Run the swap test (§1), claims workflow and production gates before export.
