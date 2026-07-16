@@ -11,7 +11,7 @@ The codified, machine-readable version of Creia's brand and design system. Singl
 | Doc | Role | Status |
 | -- | -- | -- |
 | **Brand Brain — Index** (this doc) | Entry point, routing, canonical facts | Active |
-| **Brand Bible — Creative** | Seven parts: I. The Brand · II. Copy System · III. Creative Design System · IV. The Product · V. Facts Bank · VI. Adapting & Channels · VII. Asset Register | Active — clean agent-first rewrite July 2026 (vi) |
+| **Brand Bible — Creative** | Seven parts: I. The Brand · II. Copy System · III. Creative Design System · IV. The Product · V. Facts Bank · VI. Adapting & Channels · VII. Asset Register | Active; AI ad-production workflow and QA live (Bible rev. viii, July 2026) |
 | **Web Design System** | creia.com implementation: components, tokens, typography, layout, motion | Active — consolidated July 2026 |
 | **[PARKED] OPS_DOC — The Ad System** | Ad agent funnel spec, genome, prompts, reward models | Parked pending rework; see banner in doc |
 
@@ -22,14 +22,14 @@ The codified, machine-readable version of Creia's brand and design system. Singl
 * **The Bible's primary purpose:** adapt winning reference creatives to Creia, and generate Creia ads + emails. Not editorial work.
 * **Writing any copy** (ad, email, social, packaging, OOH) → Bible Part II (how to write), Part IV (product truth), Part V (what you may claim). Anything not Verified in Part V gets tagged [ASA CHECK], never softened or dropped.
 * **Designing any creative** → Bible Part III (+ Part IV for the spec block, Part VII for source assets).
-* **Adapting a reference creative** → Bible Part VI §30 (the adaptation checklist).
+* **Copying or adapting ads** → Bible §12 for text modes and production gates, then §30 for the mandatory deliverable: separately composed 4:5 and 9:16 prompts, outputs when direct generation is available, and the exact copy deck.
 * **Building or editing creia.com** → Web Design System. Copy on the site still follows Bible Part II.
-* **Ad pipeline work** → OPS_DOC is parked; do not generate from it. The old funnel-permission system is retired — top vs bottom of funnel is case by case. Source assets: Bible Part VII.
+* **Ad pipeline work** → Live generation behaviour comes from Bible §§12 and 30–31; source assets come from Part VII. OPS_DOC is parked and must not supply prompts, CTAs, funnel permissions or visual rules.
 * **Fact disputes** → the block below, then Bible Parts IV–V. If an asset disagrees with Part IV, the asset is wrong.
 
 ## Two domains, one rule
 
-Creative follows the Bible. The website follows the Web Design System. When they appear to conflict, scope decides — the split is intentional (calmer site, louder creative). Web body type is Hubot Sans Variable, creative running text is Area Extended; web palette is neutral-only, creative runs the full palette plus the pop set.
+Creative follows the Bible. The website follows the Web Design System. When they appear to conflict, scope decides; the split is intentional (calmer site, louder creative). Web typography follows the Web Design System. Final Creia ad type is Area Extended, except approved NATIVE_TEXT under Bible §12. Web colour is neutral-only. Creative uses deep black, flash white and material neutrals; if a pop is used, one pop colour belongs to a minimal number of discrete physical props.
 
 ---
 
@@ -47,8 +47,8 @@ Creative follows the Bible. The website follows the Web Design System. When they
 * Tagline: **Beyond the gym.** Internal pillars: Cognition. Energy. Recovery. Consumer phrasing: Brain power. Clean energy. Lean definition
 * Audiences: primary women 24–34 UK urban; secondary yummy mummies (mid-30s–mid-40s, same creative world); tertiary the cool guys (adopt, not pursued)
 * Copy references: **Nothing + David (protein)**. Byredo and Skims are retired as references
-* Type: **Area Extended** default (primarily Bold; lower weights for body); **Hubot Sans only for small text/subtext**; Instrument Serif retired. Font licence for AI/render use confirmed (Jul 2026)
-* Logo "black" = navy #0D191F — confirmed intentional (Jul 2026)
+* Type: final Creia ad type is assembled in post in **Area Extended** (primarily Bold; lower weights for body); **Hubot Sans only for small text/subtext**. Approved NATIVE_TEXT under Bible §12 is the bounded generated-text exception. Instrument Serif retired. Font licence for AI/render use confirmed (Jul 2026)
+* Logo "black" = navy #0D191F, confirmed intentional (Jul 2026). Standalone wordmarks use approved post-production masters, never image-generated substitutes
 * Shipping: same-day dispatch before 1pm Mon–Fri; next-day UK delivery
 * Product renders + brand assets: this repo, folders at root (see Bible Part VII and `creia_assets_index.md`)
 * Founder / casting face: Faith Charnock (in-range, rights cleared) — `Casting/`
@@ -61,8 +61,7 @@ Set aside pending rework; predates the July 2026 Bible revisions and contradicts
 
 ## Gaps and open questions
 
-* **Assets** — Bible Part VII. Done: product renders, logos (navy confirmed), fonts (licence confirmed), safe zones, dimensions, colour reference, founder casting reference. Closed by decision (Jul 2026): transparent box renders, extra casting range. Remaining: photography/prop libraries (homes ready: `Props/` + the three `Visual…` folders), moodboard mirror, logo lockups + misuse sheet.
-* Design-system cohesion pass — remaining core: resolve pop-colour within the dark style and unify the three visual registers. (Font-usage rule, safe-zone both-variants rule and the reference refresh are now folded into the Bible.)
+* **Assets** — Bible §§33–34. Done: product masters, approved wordmarks, installed fonts and licence, safe-zone guides, dimensions, fixed identity colours and current casting reference. Remaining: typography specimen; editable 4:5/9:16 assembly templates; logo finishing; tagged photography and prop library; ad/email, flash, contrast/black-level, pop-prop and anti-reference boards; moodboard mirror.
 * OPS_DOC rework
 * Asset errata: two infographics carry factual/typo errors (Bible Part V §28); the site's "two kilos" line needs correcting to 1kg
 * Testimonials — parked by decision; social-proof slot stays empty until real reviews exist
@@ -70,7 +69,8 @@ Set aside pending rework; predates the July 2026 Bible revisions and contradicts
 
 ## Changelog
 
-* **July 2026 (viii):** Brain migrated to the private GitHub repo zuberseth/creia-brand-brain — docs + assets in one place, git history as the changelog from here on. Linear docs retired as [MOVED] mirrors.
+* **July 2026 (Bible rev. viii):** AI ad-production protocol added. Copied ads now return independent 4:5 and 9:16 prompts, outputs when direct generation is available, and an exact copy deck; text modes, native-text gate, deterministic post-production and generation/export QA are live.
+* **July 2026 (repository migration):** Brain migrated to the private GitHub repo zuberseth/creia-brand-brain. Docs and assets now live in one place; git history is the changelog from here on. Linear docs retired as [MOVED] mirrors.
 * **July 2026 (vii):** Bible §29 expanded with the full live 90-days page (creia.com/90-days-with-creia) — phase-by-phase science and quotable lines, "provably" flagged for ad reuse. Asset decisions logged: transparent box renders not needed; logo navy #0D191F confirmed intentional; font licence confirmed; extra casting range skipped for now. Aesop/Byredo line scrubbed from the Web Design System; OPS_DOC drift banner updated (stale reference set, funnel system removal).
 * **July 2026 (vi):** Bible fully rewritten clean from Zuber's annotated markdown. Agent-first purpose note (adapt winning creatives + generate ads/emails, not editorial); contractions throughout the doc; noun-poetry strategies retired (cultural adjacency, sensory misdirection, quiet specificity, flat ending) with the worst examples moved to Bad; funnel-permission system removed (case-by-case); Nothing + David made primary copy references (Byredo test → Nothing/David test); yummy mummies added as secondary audience (cool guys → tertiary); myth-buster voice recast as confident/playful/cool; shoot rules relaxed (cool gym objects, vintage gymwear, tasteful before/after); Canva section added for email + carousel skeletons; canon examples cleaned and Zuber's new lines added (caffeine, coffee-signal, megamind); David added to corpus. Part VI renamed Adapting & Channels; Part VII renumbered (§33–34).
 * **July 2026 (v):** Product-render masters produced and logged (Bible Part VII). Logos, fonts, safe-zone templates, dimensions, colour reference, and founder casting reference added to `Creia Assets`. Testimonials parked by decision.
