@@ -11,7 +11,7 @@ The codified, machine-readable version of Creia's brand and design system. Singl
 | Doc | Role | Status |
 | -- | -- | -- |
 | **Brand Brain — Index** (this doc) | Entry point, routing, canonical facts | Active |
-| **Brand Bible — Creative** | Seven parts: I. The Brand · II. Copy System · III. Creative Design System · IV. The Product · V. Facts Bank · VI. Adapting & Channels · VII. Asset Register | Active; task-routed production system live (Bible rev. ix, July 2026) |
+| **Brand Bible — Creative** | Seven parts: I. The Brand · II. Copy System · III. Creative Design System · IV. The Product · V. Facts Bank · VI. Adapting & Channels · VII. Asset Register | Active; task-routed production system live (Bible rev. x, July 2026) |
 | **Web Design System** | creia.com implementation: components, tokens, typography, layout, motion | Active — consolidated July 2026 |
 
 ---
@@ -71,6 +71,7 @@ Creative follows the Bible. The website follows the Web Design System. When they
 
 ## Changelog
 
+* **July 2026 (Bible rev. x):** Copied-ad production now locks source roles, silhouettes, scale, framing, lighting, material response and props before product selection. Product availability no longer authorises inclusion; independent aspect-ratio siblings preserve one scene specification; physical scale requires a scene-relative anchor; and native-resolution reference QA blocks failed frames before further paid generation.
 * **July 2026 (Bible rev. ix):** Standard ads, carousels and emails now route through separate production contracts. Copied and scratch ads share one prompts-plus-copy handoff; Zuber owns final typography and standalone wordmark assembly by default, while explicit full-production requests must verify generated imagery before adding text. Creative-rule scope is now defined by concept, frame and batch, with a narrow declared-deviation protocol and fixed source data. Duplicate workflow, reference and asset-status rules were consolidated; repo-root paths and missing-reference fallback were corrected.
 * **July 2026 (repository cleanup):** Obsolete handoff guidance was tombstoned, OPS_DOC moved to `Archive/`, the 90-days source-language digest moved to `Corpus/`, web typography mapped to supplied font weights, the asset index became a factual manifest and the mislabelled casting PNG extension was corrected.
 * **July 2026 (Bible rev. viii):** AI ad-production protocol added. Copied ads now return independent 4:5 and 9:16 prompts, outputs when direct generation is available, and an exact copy deck; text modes, native-text gate, deterministic post-production and generation/export QA are live.

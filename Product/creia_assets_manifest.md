@@ -1,6 +1,6 @@
 # Creia Product Assets — Master Set
 
-Clean, tint-neutral product cutouts. Use as reference/base for scaling creatives.
+Clean, tint-neutral product cutouts. Use for identity and scale only after the applicable Bible workflow selects the SKU. Availability never authorises inclusion.
 
 ## Physical dimensions
 

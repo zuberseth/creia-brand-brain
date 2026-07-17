@@ -10,7 +10,7 @@ Routing: copy work runs on II, IV and V. Design work runs on III, IV and VII. Ad
 
 Default posture: write the strongest version, mark anything unverified with [ASA CHECK] in the copy deck or copy document, then fix it after the draft exists. The tag is review metadata, not artwork or image-prompt copy. A good line that needs a legal tweak beats no line.
 
-**Revision.** *July 2026 (ix):* current production source of truth. Covers copied and scratch ads, email and carousel routing, concept/frame/batch scope, deliberate deviations, the three text modes, prompts-plus-copy handoffs, human-default post-production, native-text gating, independent paid-social aspect ratios and production QA.
+**Revision.** *July 2026 (x):* current production source of truth. Covers copied and scratch ads, email and carousel routing, concept/frame/batch scope, deliberate deviations, the three text modes, prompts-plus-copy handoffs, human-default post-production, native-text gating, reference locks, physical-scale enforcement, independent paid-social aspect ratios and production QA.
 
 ---
 
@@ -273,7 +273,7 @@ The same Creia visual direction governs generated imagery for ads, carousel imag
 * Negative space, black as easily as white — lots of empty space, always
 * Product-hero with stat overlays: approved format borrowing (Part VI)
 * **Spec callout block:** 5g Creatine / 400mg Electrolytes / 0 Calories flanking the product (vertical on 4:5, row on 9:16)
-* Every paid-social still concept produces two siblings: post 4:5 and story 9:16. Recompose each for its frame and safe zone; never crop one out of the other.
+* Every paid-social still concept produces two siblings: post 4:5 and story 9:16. Recompose each for its frame and safe zone; never crop one out of the other. Independently composed means reflowed for the frame, not reinterpreted: product mapping and physical scale, subject count, camera and viewpoint, lighting logic, prop set, material response and colour grade remain invariant. Only framing, spacing and safe-zone placement may change.
 
 ### AI production protocol
 
@@ -285,9 +285,11 @@ Higgsfield, or the active image model, makes the photograph: scene, casting, lig
 
 The native-text gate fails ordinary ad headlines, spec callouts, designed infographic labels, selling CTAs, standalone Creia signatures and product-packaging text. Run the gate automatically. A request to generate native text triggers the check but doesn't by itself override eligibility. An explicit user instruction to break eligibility follows §4 and is declared **NATIVE_TEXT (user override)**; include the exact copy and requested style in the prompt, and retain exact-copy and final-export QA. Native interface controls are contextual UI, not Creia CTAs. Approved NATIVE_TEXT may preserve the platform's essential colours and neutral interface surfaces only inside the depicted interface; they don't count as the concept's pop colour and may not spread into the photography, surrounding background, Creia type, wordmark or product. The exception never waives claims or the real-testimonials-only rule.
 
-Use the exact product master as an input whenever the product appears. If generated packaging isn't exact, regenerate it or composite the master before returning a generated image. Any standalone Creia signature comes from the approved reversed-R master in post. Safe-zone guides inform composition and never appear in the output. Full-production assembly uses the tool named in the brief; if none is named, stop after the verified components and request it. §30 owns the ad workflow and return shape; §31 owns email production.
+Use the exact product master as an input whenever the product appears. Exact product means correct master identity, artwork, geometry and physical scale. When a familiar body part or known-size object appears, translate §20's canonical dimensions into at least one scene-relative scale anchor before prompting. Millimetres written in a prompt aren't evidence of compliance; wrong relative size fails. If generated packaging, geometry or scale isn't exact, regenerate it or composite the master at calibrated scale before returning a generated image. Any standalone Creia signature comes from the approved reversed-R master in post. Safe-zone guides inform composition and never appear in the output. Full-production assembly uses the tool named in the brief; if none is named, stop after the verified components and request it. §30 owns the ad workflow and return shape; §31 owns email production.
 
 ### Production gates
+
+**Reference fidelity, copied standard stills:** inspect each output at native resolution beside the source and product master before the next paid call. Once both siblings exist, compare them against the shared scene specification. The §30 Read's locked invariants must survive, subject only to §12's permitted frame reflow; verify light direction, hardness and falloff, specular and contact-shadow consistency separately. Prompt wording isn't evidence, and a polished frame can't compensate for a failed category. Regenerate or composite a failed frame; if unresolved, label it failed and don't present it as final. A scale or fidelity judgment must use a named anchor or invariant during verification; labels such as `credible scale` or `structure retained` aren't verification. The handoff still reports exceptions only under §30.
 
 **Generated image:** the expected image set exists for its format; standard paid-social stills have both independently composed siblings; the declared text mode was followed; no generated standalone wordmark or selling CTA appears; any visible product and packaging are exact; colour and any pop pass §14's concept-wide and minimal-prop rules; and lighting and grade pass §16.
 
@@ -529,17 +531,17 @@ We borrow format freely — composition, hook mechanics, placement shapes and pr
 
 When asked to make or copy one standard-still concept or a batch, the agent must return the image-generation work **and** the corresponding copy. The task isn't finished if either is missing. For each standard-still concept, return:
 
-1. **Read:** for a copied ad, the source ID plus the layout, hook and structural devices being kept; for a scratch ad, the audience, hook, visual premise and intended placement.
+1. **Read:** for copied work, identify the source ID, layout, hook and structural devices, then lock subject roles and count, gross silhouettes, relative scale and arrangement, camera angle and framing logic, lighting and material response, and necessary props. Mark every visible source object `KEEP`, `REPLACE` or `REMOVE`; only §12's permitted frame reflow, the brief or a declared deviation may change a locked item. For a scratch ad, state the audience, hook, visual premise and intended placement.
 2. **Text mode:** POST_TEXT, STRUCTURAL_TEXT or NATIVE_TEXT, with one-line reasoning.
 3. **Prompt and output pair:** a standalone 4:5 feed prompt and an independently reflowed 9:16 story prompt, followed by both generated images when direct image-model access exists.
 4. **Production table:** every exact line with its placement/style, claims status and assembly note. Use the assembly note for final typography, standalone wordmarks or other post work. Put [ASA CHECK] in the claims-status cell, never in the exact line, artwork or prompt.
 5. **Exceptions only:** disclose missing optional references, declared deliberate deviations and any unresolved failed gate. Don't repeat checks that passed.
 
-Each prompt must stand alone without Higgsfield having read this bible: include composition, aspect ratio, lighting, casting, props, product handling, the selected text-mode behaviour and bounded negative constraints. A NATIVE_TEXT prompt includes the exact clean native copy inside each aspect-ratio prompt as well as in the production table. If direct access exists, run the prompts, verify the images against §12's generated-image gate and return both prompts and outputs; otherwise return ready-to-paste prompts. For batches, keep a one-to-one mapping between each source or scratch concept, prompt pair, output pair and production table.
+Each prompt must stand alone without Higgsfield having read this bible: include composition, aspect ratio, lighting, casting, props, product handling, the selected text-mode behaviour and bounded negative constraints. A NATIVE_TEXT prompt includes the exact clean native copy inside each aspect-ratio prompt as well as in the production table. If direct access exists, run the prompts, verify the images against all applicable §12 image-generation gates and return both prompts and outputs; otherwise return ready-to-paste prompts. For batches, keep a one-to-one mapping between each source or scratch concept, prompt pair, output pair and production table.
 
-Use every relevant available product, safe-zone, lighting and prop reference. A missing optional board or reference never blocks work: disclose it once, continue from the written rules and don't invent an absent asset. When direct generation is available, any image containing the product must pass §12's exact-product gate before handoff.
+Use the references required by the selected product and scene. Availability isn't inclusion permission: use a master when the brief or scratch concept names it, or when it matches the mapped source's semantic role. The sachet is the default hero-product replacement; a box appears only when the brief or scratch concept calls for it or the source role is packaging. Source object count never justifies a box, pack or extra SKU. If no Creia master can preserve a copied work's locked mechanism, apply §4 before paid generation; never invent or silently substitute an incompatible product. A missing optional board or reference never blocks work: disclose it once, continue from the written rules and don't invent an absent asset. When direct generation is available, any image containing the product must pass §12's exact-product gate before handoff.
 
-**Default stopping point:** the handoff above is complete before final typography and wordmark assembly. Zuber adds final typography and any standalone wordmark in post by default; STRUCTURAL_TEXT label ownership follows §12, and returned generated images already have an exact product. Only perform full production when explicitly asked. In full production, generate and verify the image first; only after it passes the generated-image gate may the agent add final type and the approved wordmark master, then run the final-export gate. Return the finished 4:5 and 9:16 exports alongside the prompts and production table. Never collapse image generation and post-production into one unverified step.
+**Default stopping point:** the handoff above is complete before final typography and wordmark assembly. Zuber adds final typography and any standalone wordmark in post by default; STRUCTURAL_TEXT label ownership follows §12, and returned generated images already have an exact product. Only perform full production when explicitly asked. In full production, generate and verify the image first; only after it passes all applicable §12 image-generation gates may the agent add final type and the approved wordmark master, then run the final-export gate. Return the finished 4:5 and 9:16 exports alongside the prompts and production table. Never collapse image generation and post-production into one unverified step.
 
 ### Scratch ads
 
@@ -547,8 +549,8 @@ Scratch ads use the same handoff and gates as copied standard ads. Replace the r
 
 ### Copied-ad adaptation checklist
 
-1. Keep the bones: layout, hook mechanics, format and necessary structure.
-2. Swap the skin: exact Creia product, §14 colour world, §16 lighting and §17 casting.
+1. Keep the bones: every locked reference feature from the Read, including source-specific lighting and material response where compatible with §16.
+2. Swap the skin: only mapped subjects, using the exact selected Creia masters, §14 colour and §17 casting.
 3. Rewrite every word from Parts II and V, except a Nothing line that fits Creia or a verified genuine Creia review or testimonial intentionally supplied for verbatim use.
 4. Apply §12's text mode and gates; stop at the default handoff unless full production was explicitly requested.
 5. Discard source colour unless it maps to an approved Creia physical prop.

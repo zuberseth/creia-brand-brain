@@ -31,5 +31,5 @@ Source-language digests live in `Corpus/`. Load them only when a task needs the 
 
 - The bible's job: adapt winning reference creatives to Creia and generate Creia ads + emails. Not editorial work.
 - Claims: anything not marked **Verified** in the bible's Part V gets an **[ASA CHECK]** flag in the returned output metadata or copy deck. The flag never enters artwork or image prompts.
-- Every standard paid-social still concept ships as independently composed 4:5 and 9:16 siblings. Carousel production follows Bible §12A.
+- Every standard paid-social still concept ships as separately reflowed 4:5 and 9:16 siblings under one locked scene specification. Carousel production follows Bible §12A.
 - Edit via commits with clear messages; the git history is the changelog.
