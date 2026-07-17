@@ -19,6 +19,7 @@ The codified, machine-readable version of Creia's brand and design system. Singl
 ## Routing for agents
 
 * **The Bible's primary purpose:** adapt winning reference creatives to Creia, and generate Creia ads + emails. Not editorial work.
+* **Creative-rule scope and exceptions** → Bible §4. Concept, frame and batch replace ambiguous creative uses of "asset". Agents may declare narrow creative deviations; required production contracts and text-mode gates change only on explicit user direction, while source data and approved masters stay fixed.
 * **Writing any copy** (ad, email, social, packaging, OOH) → Bible Part II (how to write), Part IV (product truth), Part V (what you may claim). Anything not Verified in Part V gets an [ASA CHECK] flag in output metadata or the copy deck, never in artwork or image prompts; the claim is never softened or dropped.
 * **Designing any creative** → Bible Part III (+ Part IV for the spec block, Part VII for source assets).
 * **Making, copying or adapting standard ads** → Bible §12 for image generation, text modes and production gates, then §30 for the mandatory prompts, generated outputs when direct model access exists, and copy-deck handoff.
@@ -30,7 +31,7 @@ The codified, machine-readable version of Creia's brand and design system. Singl
 
 ## Two domains, one rule
 
-Creative follows the Bible. The website follows the Web Design System. When they appear to conflict, scope decides; the split is intentional (calmer site, louder creative). Web typography follows the Web Design System. Final Creia ad type is Area Extended, except approved NATIVE_TEXT under Bible §12. Web colour is neutral-only. Creative uses deep black, flash white and material neutrals; if a pop is used, one pop colour belongs to a minimal number of discrete physical props.
+Creative follows the Bible. The website follows the Web Design System. When they appear to conflict, scope decides; the split is intentional (calmer site, louder creative). Web typography follows the Web Design System. Final Creia ad type is Area Extended, except approved NATIVE_TEXT under Bible §12. Web colour is neutral-only. Creative uses deep black, flash white and material neutrals; if a concept uses a pop, one pop colour belongs to a minimal number of discrete physical props across that concept.
 
 ---
 
@@ -70,7 +71,7 @@ Creative follows the Bible. The website follows the Web Design System. When they
 
 ## Changelog
 
-* **July 2026 (Bible rev. ix):** Standard ads, carousels and emails now route through separate production contracts. Copied and scratch ads share one prompts-plus-copy handoff; Zuber owns final typography and standalone wordmark assembly by default, while explicit full-production requests must verify generated imagery before adding text. Duplicate workflow, reference and asset-status rules were consolidated; repo-root paths and missing-reference fallback were corrected.
+* **July 2026 (Bible rev. ix):** Standard ads, carousels and emails now route through separate production contracts. Copied and scratch ads share one prompts-plus-copy handoff; Zuber owns final typography and standalone wordmark assembly by default, while explicit full-production requests must verify generated imagery before adding text. Creative-rule scope is now defined by concept, frame and batch, with a narrow declared-deviation protocol and fixed source data. Duplicate workflow, reference and asset-status rules were consolidated; repo-root paths and missing-reference fallback were corrected.
 * **July 2026 (repository cleanup):** Obsolete handoff guidance was tombstoned, OPS_DOC moved to `Archive/`, the 90-days source-language digest moved to `Corpus/`, web typography mapped to supplied font weights, the asset index became a factual manifest and the mislabelled casting PNG extension was corrected.
 * **July 2026 (Bible rev. viii):** AI ad-production protocol added. Copied ads now return independent 4:5 and 9:16 prompts, outputs when direct generation is available, and an exact copy deck; text modes, native-text gate, deterministic post-production and generation/export QA are live.
 * **July 2026 (repository migration):** Brain migrated to the private GitHub repo zuberseth/creia-brand-brain. Docs and assets now live in one place; git history is the changelog from here on. Linear docs retired as [MOVED] mirrors.

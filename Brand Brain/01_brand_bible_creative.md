@@ -2,15 +2,15 @@
 
 **Read this first (you're an agent, this doc is for you).** The primary purpose of this bible is (1) taking winning reference creatives — ads, emails, formats that convert — and adapting them to Creia, and (2) generating Creia ads and emails from scratch. That's the job. It's not editorial work. If you're choosing between a line that sounds like poetry and a line that sells the sachet, pick the one that sells.
 
-When asked to make or copy a standard still ad or batch, the default handoff is the ready-to-paste image prompts, generated images when the agent has image-model access, the exact copy deck and assembly notes. Zuber adds final typography and any standalone wordmark in post unless he explicitly asks the agent for full production. §30 defines that return shape and stopping point; carousels use §12A and emails use §31.
+When asked to make or copy a standard still ad or batch, the default handoff is the ready-to-paste image prompts, generated images when the agent has image-model access, the exact copy deck and assembly notes. Zuber adds final typography and any standalone wordmark in post unless he explicitly asks the agent for full production; STRUCTURAL_TEXT label ownership remains brief-defined under §12. §30 defines that return shape and stopping point; carousels use §12A and emails use §31.
 
 Seven parts: **I. The Brand** (who we are), **II. The Copy System** (how we write), **III. The Creative Design System** (how we look), **IV. The Product** (what we sell), **V. The Facts Bank** (what we can say), **VI. Adapting & Channels** (how we borrow, where things run), **VII. The Asset Register** (what we build with).
 
 Routing: copy work runs on II, IV and V. Design work runs on III, IV and VII. Ad production also runs on §§12 and 30; email production runs on §§9 and 31; carousels run on §12A. Read I regardless.
 
-Default posture: write the strongest version, mark anything unverified with [ASA CHECK] in the copy deck or copy document, then fix it after the asset exists. The tag is review metadata, not artwork or image-prompt copy. A good line that needs a legal tweak beats no line.
+Default posture: write the strongest version, mark anything unverified with [ASA CHECK] in the copy deck or copy document, then fix it after the draft exists. The tag is review metadata, not artwork or image-prompt copy. A good line that needs a legal tweak beats no line.
 
-**Revision.** *July 2026 (ix):* current production source of truth. Covers copied and scratch ads, email and carousel routing, the three text modes, prompts-plus-copy handoffs, human-default post-production, native-text gating, independent paid-social aspect ratios and production QA.
+**Revision.** *July 2026 (ix):* current production source of truth. Covers copied and scratch ads, email and carousel routing, concept/frame/batch scope, deliberate deviations, the three text modes, prompts-plus-copy handoffs, human-default post-production, native-text gating, independent paid-social aspect ratios and production QA.
 
 ---
 
@@ -48,7 +48,7 @@ She heard about creatine from a podcast, a friend in finance, her dermatologist,
 
 ### Copywriting references (primary): Nothing and David
 
-* **Nothing:** deadpan jokes delivered with a straight face. "Your new party pill." "You're hot, so is your phone." Benefits written as her actual life, not as specs. Funny without laughing at its own joke. Nothing's the one brand whose actual lines we can lift when they fit the sachet better than the gadget.
+* **Nothing:** deadpan jokes delivered with a straight face. "Your new party pill." "You're hot, so is your phone." Benefits written as her actual life, not as specs. Funny without laughing at its own joke. Nothing's the one brand whose actual lines we can lift when they fit the sachet better than the gadget. This exception applies everywhere in the bible, including copied-ad adaptation; no general source-wording rule overrides it.
 * **David (the protein bar):** blunt confidence. Says the number, makes the claim, doesn't dress it up. No wellness fluff, no apology, slightly cocky. Plain words that sell hard.
 
 Write like these two. If neither brand would ship the line, it's probably not Creia.
@@ -78,13 +78,25 @@ Optimum Nutrition, MyProtein, Bulk, Huel, Ghost, Gorilla Mind; any pre-workout, 
 
 * The competition is every other small luxury she chose that day, not other creatine brands
 * The brand is the crowd. Seeding is the strategy
-* We borrow format, never content. Nothing's the standing exception: their lines are fair game when they fit
+* We borrow format, never content, subject to §3's Nothing exception
 * Category-generic copy is invisible copy
 * Generate first, flag second. A strong line with an [ASA CHECK] tag beats a safe line, and both beat no line
-* Rules are defaults unless marked hard or QA-gated. Deviations from defaults are declared; hard gates aren't optional
+* Creative rules are strong defaults. Agent-initiated deviations use the protocol below
+* Required handoff fields, workflow steps and text-mode eligibility change only on explicit user direction
+* Fixed source data comprises every canonical fact in the Index and Parts IV–V, plus testimonial authenticity and approved product and wordmark masters
 * Fun sells. The joke is a conversion tool, not a compromise. Delivered flat it's high fashion; delivered loud it's a smoothie carton
 * Simple beats clever. If she has to decode it, it's gone
 * Creia is beyond the gym
+
+### Working units
+
+**Concept** means one creative idea within one format. A standard-still concept includes its 4:5 and 9:16 siblings; a carousel is one concept across every slide; an email is one concept. **Frame** means one exported still or one carousel slide. **Batch** means two or more concepts. **Asset** means a literal source file, master or export; it never sets the scope of a creative rule.
+
+### Deliberate deviation
+
+Follow every rule by default. User-directed deviations follow the brief. An agent may initiate only a creative-rule deviation, and only when following the rule would weaken the reference's core mechanism or make the result less Creia. In either case, break the smallest possible scope, keep every unrelated rule, and add `DELIBERATE DEVIATION: [rule] / [reason] / [scope]` to handoff metadata, never the artwork. A user-directed deviation needs no further approval; an agent-initiated deviation may proceed only with that one-line rationale. The deviation changes only the named check within the stated scope. Labels such as **must**, **never** and **gate** don't replace this hierarchy.
+
+Fixed source data is non-deviable. A brief that conflicts with it must identify the change as a factual update; otherwise preserve the canonical value and flag the conflict in the handoff.
 
 ---
 
@@ -111,7 +123,7 @@ The voice doesn't change across the funnel. A conversion ad announcing "30-pack,
 
 The second dial on the same voice. Deadpan flirtation: the joke arrives in the same tone as the spec sheet. Nothing's "Your new party pill" and Creia's own "Can't commit?" and "Because we know you'll be back." are the pattern.
 
-Rules: delivered flat (if the line knows it's funny, cut it); one wink per asset; second person is the natural home; benefits translate into her life, not into performance; the wink never touches the claims; if it would fit an Innocent carton, it fails.
+Rules: delivered flat (if the line knows it's funny, cut it); one wink per concept, including across a whole carousel; second person is the natural home; benefits translate into her life, not into performance; the wink never touches the claims; if it would fit an Innocent carton, it fails.
 
 Lives in: headlines, trial and offer framing, transactional moments, props, social captions, OOH. Stays out of: legal copy, claims, crisis comms.
 
@@ -123,7 +135,7 @@ Lives in: headlines, trial and offer framing, transactional moments, props, soci
 
 ## 6. Language defaults
 
-Defaults, not gates. The test for any deviation: does it sharpen the line, or is it reaching for a template? If the strongest line needs a listed word, write it, note the deviation, ship it for review.
+Defaults, not gates. The test for any deviation: does it sharpen the line, or is it reaching for a template? If the strongest line needs a listed word, use §4's deliberate-deviation protocol.
 
 ### Standing carve-outs (in live use, no flag needed)
 
@@ -159,7 +171,7 @@ UK consumer copy runs under ASA/CAP rules. Never refuse to write a claim and nev
 
 ## 7. Copy strategies
 
-Use one primary strategy per ad.
+Use one primary strategy per concept.
 
 **Negative confidence.** Say what it's not. "Not a pre-workout." "No spike. No crash. No caffeine." "No loading phases. No heavy fillers."
 
@@ -177,7 +189,7 @@ Use one primary strategy per ad.
 
 **Retired strategies — don't generate in these shapes:** cultural adjacency ("The sachet, the rings, the clutch, the car."), sensory misdirection ("Lime, cold water, something bracing before the door."), quiet specificity ("5g. Monohydrate. Every morning."), the flat ending ("A small sachet. Five grams. Lime."). All noun-poetry: they read as pretentious, say nothing, and sell nothing. Nothing wouldn't write them and the Creia emails never sound like them.
 
-No funnel routing for strategies. Whether an asset is top or bottom of funnel gets decided case by case; the only hard rule is that every line sounds like Creia.
+No funnel routing for strategies. A concept's funnel role gets decided case by case. Every line still has to sound like Creia; deliberate deviations follow §4.
 
 ## 8. Constraints (defaults, break deliberately)
 
@@ -191,11 +203,11 @@ Headlines should: run under 8 words (12 when an offer or claim is embedded); avo
 
 **Subject lines.** Sentence case, no emojis.
 
-**CTAs.** Sentence case in pill buttons for designed emails ("Try Creia", "Claim free trial", "Confirm Trial", "Get a full box", "Get Creia"). The Klaviyo rebuild system runs uppercase Area Extended pills — both are live systems; match the system the asset belongs to. Faith emails use lowercase text links, no buttons. Site CTAs: "BUY NOW", "START TRIAL", "CLAIM OFFER", "EXPLORE THE BENEFITS" (uppercase, per Web Design System). One primary CTA per email. Auto-apply discount links always; codes are fallback in small text.
+**CTAs.** Sentence case in pill buttons for designed emails ("Try Creia", "Claim free trial", "Confirm Trial", "Get a full box", "Get Creia"). The Klaviyo rebuild system runs uppercase Area Extended pills — both are live systems; match the live system. Faith emails use lowercase text links, no buttons. Site CTAs: "BUY NOW", "START TRIAL", "CLAIM OFFER", "EXPLORE THE BENEFITS" (uppercase, per Web Design System). One primary CTA per email. Auto-apply discount links always; codes are fallback in small text.
 
 **Founder emails.** From "Faith from Creia" (team@creia.com), signed Faith, Creia Founding Team — never "Founder". Full sentences, plain and human, no design, no imagery, text links.
 
-**Ads.** Headline + spec callouts + product hero or scene. Copy delivery, image generation and assembly follow §§12 and 30; the controlled native-text exception lives in §12. Spec blocks may run without final full stops. One wink max. Paid-social CTA placement is governed once in §31.
+**Ads.** Headline + spec callouts + product hero or scene. Copy delivery, image generation and assembly follow §§12 and 30; the controlled native-text exception lives in §12. Spec blocks may run without final full stops. Paid-social CTA placement is governed once in §31.
 
 **Carousels.** Copy and production follow the separate §12A system; don't apply the standard-still or email skeleton to them.
 
@@ -268,26 +280,26 @@ The same Creia visual direction governs generated imagery for ads, carousel imag
 Higgsfield, or the active image model, makes the photograph: scene, casting, lighting, physical props, product placement and composition. The agent chooses one text mode before prompting:
 
 * **POST_TEXT — default.** Generate no intended final text. Return every headline, callout and supporting line separately, with a placement map, for Area Extended assembly in post.
-* **STRUCTURAL_TEXT — designed information.** For tables, diagrams, timelines and labelled boxes (Day 1 / Day 30, for example), the model may build the geometry and rough text scaffolding. Return the exact copy separately and replace every readable label in post.
+* **STRUCTURAL_TEXT — designed information.** For tables, diagrams, timelines and labelled boxes (Day 1 / Day 30, for example), the model builds the geometry and blank text-ready containers sized for the exact copy; it doesn't render rough or readable labels. Return every exact line separately. The brief determines whether the agent later adds those words with its specified image-editing tool or Zuber adds them. If the brief doesn't say, return the blank scaffold and exact copy without assuming the owner or tool.
 * **NATIVE_TEXT — text is the format.** The model may render exact text only when it sits inside a recognisable interface, conversation, screen, document or physical object; is essential to the reference; and would become less authentic in Area Extended. ChatGPT conversations, social polls, messages, search results, notes and reviews are the pattern. Return the intended text separately for verification.
 
-The native-text gate fails ordinary ad headlines, spec callouts, designed infographic labels, selling CTAs, standalone Creia signatures and product-packaging text. Run the gate automatically. An explicit user request to generate native text triggers the check but doesn't waive it. Native interface controls are contextual UI, not Creia CTAs; the exception waives typography only, never colour, claims or the real-testimonials-only rule.
+The native-text gate fails ordinary ad headlines, spec callouts, designed infographic labels, selling CTAs, standalone Creia signatures and product-packaging text. Run the gate automatically. A request to generate native text triggers the check but doesn't by itself override eligibility. An explicit user instruction to break eligibility follows §4 and is declared **NATIVE_TEXT (user override)**; include the exact copy and requested style in the prompt, and retain exact-copy and final-export QA. Native interface controls are contextual UI, not Creia CTAs. Approved NATIVE_TEXT may preserve the platform's essential colours and neutral interface surfaces only inside the depicted interface; they don't count as the concept's pop colour and may not spread into the photography, surrounding background, Creia type, wordmark or product. The exception never waives claims or the real-testimonials-only rule.
 
-Use the exact product master as an input whenever the product appears. If generated packaging isn't exact, regenerate it or composite the master before returning a generated image. Any standalone Creia signature comes from the approved reversed-R master in post. Safe-zone guides inform composition and never appear in the output. §30 owns the ad workflow and return shape; §31 owns email production.
+Use the exact product master as an input whenever the product appears. If generated packaging isn't exact, regenerate it or composite the master before returning a generated image. Any standalone Creia signature comes from the approved reversed-R master in post. Safe-zone guides inform composition and never appear in the output. Full-production assembly uses the tool named in the brief; if none is named, stop after the verified components and request it. §30 owns the ad workflow and return shape; §31 owns email production.
 
 ### Production gates
 
-**Generated image:** the expected image set exists for its format; standard paid-social stills have both independently composed siblings; the declared text mode was followed; no generated standalone wordmark or selling CTA appears; any visible product and packaging are exact; colour and contrast pass §14; lighting and grade pass §16; and, if a pop is used, one pop colour belongs to a minimal number of discrete physical props.
+**Generated image:** the expected image set exists for its format; standard paid-social stills have both independently composed siblings; the declared text mode was followed; no generated standalone wordmark or selling CTA appears; any visible product and packaging are exact; colour and any pop pass §14's concept-wide and minimal-prop rules; and lighting and grade pass §16.
 
-**Final export:** every non-native text element uses approved Area Extended (Hubot Sans only where §15 allows); NATIVE_TEXT matches the copy deck exactly, with no garbling; standalone signatures and product packaging use master assets; the relevant safe zones pass; and every claim is Verified or carries [ASA CHECK] as copy-deck metadata. No [ASA CHECK] tag or on-image selling CTA appears in the artwork. Failed native text is regenerated or rebuilt in post, never shipped.
+**Final export:** every non-native text element uses approved Area Extended (Hubot Sans only where §15 allows); NATIVE_TEXT matches the copy deck exactly, with no garbling; standalone signatures and product packaging use master assets; the relevant safe zones pass; and every claim is Verified or carries [ASA CHECK] as copy-deck metadata. No [ASA CHECK] tag appears in artwork. No selling CTA appears inside a generated image or paid-social creative; designed-email CTAs follow §31 and sit outside the hero image. Failed native text is regenerated or rebuilt in post, never shipped.
 
 ## 12A. Carousel production
 
 Carousels are a separate format. Don't apply the standard-still layout or email skeleton to them, and don't infer carousel prompt count from the two-prompt standard-still contract.
 
-Final carousel assembly uses Canva (via the connector). The canon skeleton is 4–6 slides around one mechanism: cover with title and one hero image → premise → mechanism/proof → close on product, final information or an approved wordmark added in post. One idea per slide. Available devices: a 2×2 ingredient grid with image, name and one-line reason; numbered node timelines (01–02–03); two-column label/definition rows; outlined Venn diagrams; and callout markers with thin connector lines. Use §12's text modes and gates, §15's final typography and §31's paid-social CTA rule.
+The canon carousel skeleton is 4–6 slides around one mechanism: cover with title and one hero image → premise → mechanism/proof → close on product, final information or an approved wordmark added in post. One idea per slide. Available devices: a 2×2 ingredient grid with image, name and one-line reason; numbered node timelines (01–02–03); two-column label/definition rows; outlined Venn diagrams; and callout markers with thin connector lines. Use §12's text modes, gates and assembly-tool rule, §15's final typography and §31's paid-social CTA rule.
 
-The default carousel handoff is a slide-by-slide structure, exact copy deck, any required image prompts and available outputs mapped to their slides, and Canva assembly notes. The Bible does not yet set a fixed prompt count. Stop before Canva assembly unless full production is explicitly requested. For full production, generate and verify every image component first, then assemble the carousel and return the Canva design link plus exported slides.
+The default carousel handoff is a slide-by-slide structure, exact copy deck, any required image prompts and available outputs mapped to their slides, and assembly notes. The Bible does not yet set a fixed prompt count. Stop before assembly unless full production is explicitly requested. For full production, generate and verify every image component first, then assemble the carousel with the brief-specified tool and return the editable design link or source file plus exported slides.
 
 ## 13. Object and prop library
 
@@ -305,12 +317,14 @@ Recurring, reusable scene objects — a casting sheet for things:
 * Supporting science imagery for carousels: pale brain cross-section, cellular/oil-bubble macros, outlined Venn
 * Chrome trays, cutlery, stainless plates, red candles, mirrored surfaces, wired headphones, denim pockets, bedsheets, white tank tops, a watch, a clutch
 
-One visual idea and one claim per asset; use the fewest props the idea needs.
+Use one primary message per concept and one visual idea per frame. Supporting proof may sit within that message. Use the fewest props the idea needs.
 
 This written list stands in until the real prop library exists as images. Home when it does: `Props/` (folder's ready, currently empty).
 
 
 ## 14. Colour (creative)
+
+Approved NATIVE_TEXT interface chrome follows §12 and is exempt from the rules below only inside the interface boundary; every surrounding visual follows this section.
 
 * Deep, full black — true-to-near-black, no grey cheating
 * Flash white; true white studio grounds for product-hero
@@ -318,20 +332,20 @@ This written list stands in until the real prop library exists as images. Home w
 * Navy only where the approved product or wordmark puts it — never as environmental permission
 * Skin tones and denim
 * Lime, pink, blood red and yellow are the pop candidates
-* An asset may be fully monochrome
-* If it uses a pop: **One pop colour per asset. It must belong to a minimal number of discrete physical props.**
+* A concept may be fully monochrome
+* If it uses a pop: **One pop colour per concept. It must belong to a minimal number of discrete physical props.** Both standard-still siblings share that colour. A carousel uses it wherever a pop appears; the pop needn't appear on every slide. Separate concepts in a batch may use different pops unless the brief sets one campaign colour
 * Pop colour never becomes ambient light, a colour gel, background, wall, floor, foliage, shadow, typography, wordmark treatment or interface decoration
 * Dirty Lime names the flavour; it never authorises a lime-coloured environment
 * Preferred build: the pop prop against true black, flash white, chrome or skin
 
-Hard colour exclusions: green colour cast; grey studio sweep; charcoal background; lifted or matte blacks; pastel worlds; gradients; neon-everything.
+Colour exclusions: green colour cast; grey studio sweep; charcoal background; lifted or matte blacks; pastel worlds; gradients; neon-everything.
 
 There is no fixed creative swatch palette beyond the product/logo colours. Placement is the system: colour lives in real objects, not across the image.
 
 
 ## 15. Typography (creative)
 
-Final Creia advertising type is assembled in post from the installed fonts. NATIVE_TEXT is the only generated text that may remain at export; STRUCTURAL_TEXT is always replaced.
+Final Creia advertising type is assembled after the base image from the installed fonts. Text rendered during initial image generation may remain only in NATIVE_TEXT. STRUCTURAL_TEXT starts blank; its exact labels are added later under §12 and the format contract.
 
 * Area Extended ExtraBold or Bold for hero display; Bold for headings, subheads and callouts; Regular for running text; Thin for light large-format subtext
 * Hubot Sans only for fine print, legal and genuinely tiny supporting text
@@ -504,28 +518,28 @@ The older not-a-stimulant lines remain in the corpus; for new copy, use §26's p
 
 # PART VI — ADAPTING & CHANNELS
 
-No funnel-permission system lives here anymore. Top vs bottom of funnel gets decided case by case, per asset; the only hard rule is that everything sounds and looks like Creia.
+No funnel-permission system lives here anymore. A concept's funnel role gets decided case by case. Everything still has to sound and look like Creia; deliberate deviations follow §4.
 
 
 ## 30. Borrowing and adapting creatives (the core job)
 
-We borrow format freely — composition, hook mechanics, placement shapes and proven scroll-stopping patterns. The brand system stops borrowing becoming imitation. We never borrow avoid-list language, category clichés, the source tone, competitor claims or foreign base palettes. Nothing is the standing exception: its register and lines transfer when they fit the sachet better ("Your new party pill").
+We borrow format freely — composition, hook mechanics, placement shapes and proven scroll-stopping patterns. The brand system stops borrowing becoming imitation. We never borrow avoid-list language, category clichés, the source tone, competitor claims or foreign base palettes, subject to §3's Nothing exception.
 
 ### Default ad handoff
 
-When asked to make or copy one standard ad or a batch, the agent must return the image-generation work **and** the corresponding copy. The task isn't finished if either is missing. For each ad, return:
+When asked to make or copy one standard-still concept or a batch, the agent must return the image-generation work **and** the corresponding copy. The task isn't finished if either is missing. For each standard-still concept, return:
 
 1. **Read:** for a copied ad, the source ID plus the layout, hook and structural devices being kept; for a scratch ad, the audience, hook, visual premise and intended placement.
 2. **Text mode:** POST_TEXT, STRUCTURAL_TEXT or NATIVE_TEXT, with one-line reasoning.
 3. **Prompt and output pair:** a standalone 4:5 feed prompt and an independently reflowed 9:16 story prompt, followed by both generated images when direct image-model access exists.
 4. **Production table:** every exact line with its placement/style, claims status and assembly note. Use the assembly note for final typography, standalone wordmarks or other post work. Put [ASA CHECK] in the claims-status cell, never in the exact line, artwork or prompt.
-5. **Exceptions only:** disclose missing optional references and any unresolved failed gate. Don't repeat checks that passed.
+5. **Exceptions only:** disclose missing optional references, declared deliberate deviations and any unresolved failed gate. Don't repeat checks that passed.
 
 Each prompt must stand alone without Higgsfield having read this bible: include composition, aspect ratio, lighting, casting, props, product handling, the selected text-mode behaviour and bounded negative constraints. A NATIVE_TEXT prompt includes the exact clean native copy inside each aspect-ratio prompt as well as in the production table. If direct access exists, run the prompts, verify the images against §12's generated-image gate and return both prompts and outputs; otherwise return ready-to-paste prompts. For batches, keep a one-to-one mapping between each source or scratch concept, prompt pair, output pair and production table.
 
 Use every relevant available product, safe-zone, lighting and prop reference. A missing optional board or reference never blocks work: disclose it once, continue from the written rules and don't invent an absent asset. When direct generation is available, any image containing the product must pass §12's exact-product gate before handoff.
 
-**Default stopping point:** the handoff above is complete before final typography and wordmark assembly. Zuber adds final typography and any standalone wordmark in post by default; returned generated images already have an exact product. Only perform full production when explicitly asked. In full production, generate and verify the image first; only after it passes the generated-image gate may the agent add final type and the approved wordmark master, then run the final-export gate. Return the finished 4:5 and 9:16 exports alongside the prompts and production table. Never collapse image generation and post-production into one unverified step.
+**Default stopping point:** the handoff above is complete before final typography and wordmark assembly. Zuber adds final typography and any standalone wordmark in post by default; STRUCTURAL_TEXT label ownership follows §12, and returned generated images already have an exact product. Only perform full production when explicitly asked. In full production, generate and verify the image first; only after it passes the generated-image gate may the agent add final type and the approved wordmark master, then run the final-export gate. Return the finished 4:5 and 9:16 exports alongside the prompts and production table. Never collapse image generation and post-production into one unverified step.
 
 ### Scratch ads
 
@@ -535,7 +549,7 @@ Scratch ads use the same handoff and gates as copied standard ads. Replace the r
 
 1. Keep the bones: layout, hook mechanics, format and necessary structure.
 2. Swap the skin: exact Creia product, §14 colour world, §16 lighting and §17 casting.
-3. Rewrite every word from Parts II and V; never keep source wording, except a verified genuine Creia review or testimonial intentionally supplied for verbatim use.
+3. Rewrite every word from Parts II and V, except a Nothing line that fits Creia or a verified genuine Creia review or testimonial intentionally supplied for verbatim use.
 4. Apply §12's text mode and gates; stop at the default handoff unless full production was explicitly requested.
 5. Discard source colour unless it maps to an approved Creia physical prop.
 6. Run the swap test (§1), claims workflow and production gates before export.
@@ -556,9 +570,9 @@ Saturation alone doesn't reject a format: crowded + strongly differentiated = la
 
 Email copy follows §9. Email does not inherit paid-social aspect-ratio, CTA-placement or standard-still return rules.
 
-**Designed emails:** final assembly uses Canva (via the connector), primarily white. Any source-based or scratch-generated image follows the same Part III creative direction and §12's image-generation protocol and format-appropriate gates, but appears only in the email's top/hero region, as in the references; don't add image bands later in the body. Paid-social sibling requirements don't apply. The canon skeleton is small wordmark → Area Extended headline → top/hero image → centred body stanzas → pill CTA → creia.com | @drinkcreia → oversized cropped wordmark as footer. Email CTAs follow §9 and sit outside the hero image.
+**Designed emails:** assembly follows §12's tool rule, and the layout remains primarily white. Any source-based or scratch-generated image follows the same Part III creative direction and §12's image-generation protocol and format-appropriate gates, but appears only in the email's top/hero region, as in the references; don't add image bands later in the body. Paid-social sibling requirements don't apply. The canon skeleton is small wordmark → Area Extended headline → top/hero image → centred body stanzas → pill CTA → creia.com | @drinkcreia → oversized cropped wordmark as footer. Email CTAs follow §9 and sit outside the hero image.
 
-For each designed email, return a short reference or concept read; exact subject line, preheader, title, body, CTA and fine print; and assembly notes. When the design uses an image, always return a ready-to-paste hero-image prompt and, when direct model access exists, run it, verify it and return the output. If the design has no image, omit the prompt rather than inventing one. This handoff is complete before Canva assembly. Only build the final email when explicitly asked; generate and verify the hero image first, then return the Canva design link and export. No 4:5/9:16 pair is required unless the brief separately asks for social derivatives.
+For each designed email, return a short reference or concept read; exact subject line, preheader, title, body, CTA and fine print; and assembly notes. When the design uses an image, always return a ready-to-paste hero-image prompt and, when direct model access exists, run it, verify it and return the output. If the design has no image, omit the prompt rather than inventing one. This handoff is complete before assembly. Only build the final email when explicitly asked; generate and verify the hero image first, then use the brief-specified tool and return the editable design link or source file plus export. No 4:5/9:16 pair is required unless the brief separately asks for social derivatives.
 
 **Plain-text Faith emails:** return the subject line, preheader, full body and exact text-link copy. No image prompt, designed layout or button. Follow §9's sender and signature rules.
 
@@ -605,4 +619,4 @@ What the brand is built from, where it lives, and what's still missing. This par
 
 Closed by decision (Jul 2026): transparent box renders; extra casting range for now; testimonials until real reviews exist; on-image CTA components, which aren't used.
 
-**Bottom line for generation readiness:** photography, casting, physical composition and structural graphics are ready to generate. Final Creia type, standalone wordmarks, packaging corrections, colour grade and safe-zone compliance are deterministic post-production. NATIVE_TEXT is the only generated text that may remain at export and must pass §12's gate.
+**Bottom line for generation readiness:** photography, casting, physical composition and structural graphics are ready to generate. Final Creia type, standalone wordmarks, packaging corrections, colour grade and safe-zone compliance are deterministic post-production. NATIVE_TEXT is the only text rendered during initial image generation that may remain at export; STRUCTURAL_TEXT begins blank and receives exact labels later under §12.
