@@ -16,7 +16,7 @@ Use for correct proportions/scale when compositing product into scenes.
 - **sku** — `trial` (5-day, 5 sachets) · `30` (30-day single box) · `90` (90-day 3-box pack) · `sachet` (single unit)
 - **view** — what's in frame / angle
 - **bg** — `white` (solid neutral white) or `transparent` (alpha)
-- **res** — `2k`, or pixel height for non-2k assets
+- **res** — `2k`, or the identifying pixel dimension for non-2k assets (`1080` for the single-sachet master)
 
 Lowercase, `_` between fields, `-` within a field. Sorts by SKU.
 
@@ -35,5 +35,5 @@ Lowercase, `_` between fields, `-` within a field. Sorts by SKU.
 ## Notes
 
 - White-background assets are on solid neutral white (not transparent). Run a background-removal pass if you need alpha for those.
-- Packaging shows `getcreia.com` (old domain) — site redirects to creia.com, so it's fine on-pack.
+- Exact existing masters may retain the printed `getcreia.com` domain. All new copy and any reconstructed packaging must use `creia.com`.
 - `box-with-sachets` and `boxes-x3` came from reflective-tile source photos; usable, candidates for an eventual seamless reshoot if pixel-perfect masters are needed.

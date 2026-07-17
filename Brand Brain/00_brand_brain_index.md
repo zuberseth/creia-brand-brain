@@ -2,7 +2,7 @@
 
 The codified, machine-readable version of Creia's brand and design system. Single source of truth for any agent (Lovable, Claude, Cursor, Figma, ad pipeline) producing on-brand work.
 
-**Restructured July 2026.** Three active documents plus one parked. Superseded duplicates carry a [SUPERSEDED] title prefix and are safe to archive.
+**Restructured July 2026.** Three active documents. Retired material lives in `Archive/` and is excluded from normal agent routing.
 
 ---
 
@@ -11,20 +11,21 @@ The codified, machine-readable version of Creia's brand and design system. Singl
 | Doc | Role | Status |
 | -- | -- | -- |
 | **Brand Brain — Index** (this doc) | Entry point, routing, canonical facts | Active |
-| **Brand Bible — Creative** | Seven parts: I. The Brand · II. Copy System · III. Creative Design System · IV. The Product · V. Facts Bank · VI. Adapting & Channels · VII. Asset Register | Active; AI ad-production workflow and QA live (Bible rev. viii, July 2026) |
+| **Brand Bible — Creative** | Seven parts: I. The Brand · II. Copy System · III. Creative Design System · IV. The Product · V. Facts Bank · VI. Adapting & Channels · VII. Asset Register | Active; task-routed production system live (Bible rev. ix, July 2026) |
 | **Web Design System** | creia.com implementation: components, tokens, typography, layout, motion | Active — consolidated July 2026 |
-| **[PARKED] OPS_DOC — The Ad System** | Ad agent funnel spec, genome, prompts, reward models | Parked pending rework; see banner in doc |
 
 ---
 
 ## Routing for agents
 
 * **The Bible's primary purpose:** adapt winning reference creatives to Creia, and generate Creia ads + emails. Not editorial work.
-* **Writing any copy** (ad, email, social, packaging, OOH) → Bible Part II (how to write), Part IV (product truth), Part V (what you may claim). Anything not Verified in Part V gets tagged [ASA CHECK], never softened or dropped.
+* **Writing any copy** (ad, email, social, packaging, OOH) → Bible Part II (how to write), Part IV (product truth), Part V (what you may claim). Anything not Verified in Part V gets an [ASA CHECK] flag in output metadata or the copy deck, never in artwork or image prompts; the claim is never softened or dropped.
 * **Designing any creative** → Bible Part III (+ Part IV for the spec block, Part VII for source assets).
-* **Copying or adapting ads** → Bible §12 for text modes and production gates, then §30 for the mandatory deliverable: separately composed 4:5 and 9:16 prompts, outputs when direct generation is available, and the exact copy deck.
+* **Making, copying or adapting standard ads** → Bible §12 for image generation, text modes and production gates, then §30 for the mandatory prompts, generated outputs when direct model access exists, and copy-deck handoff.
+* **Making carousels** → Bible §12A. Keep carousel production separate from standard-still and email contracts.
+* **Making emails** → Bible §9 for copy and §31 for the designed-email or plain-text contract. Email hero images follow the shared creative direction but do not inherit paid-social aspect ratios.
 * **Building or editing creia.com** → Web Design System. Copy on the site still follows Bible Part II.
-* **Ad pipeline work** → Live generation behaviour comes from Bible §§12 and 30–31; source assets come from Part VII. OPS_DOC is parked and must not supply prompts, CTAs, funnel permissions or visual rules.
+* **Ad pipeline work** → Live generation behaviour comes from Bible §§12 and 30–31; source assets come from Part VII. The archived OPS_DOC must not supply prompts, CTAs, funnel permissions or visual rules.
 * **Fact disputes** → the block below, then Bible Parts IV–V. If an asset disagrees with Part IV, the asset is wrong.
 
 ## Two domains, one rule
@@ -35,7 +36,7 @@ Creative follows the Bible. The website follows the Web Design System. When they
 
 ## Canonical facts (settle disputes here)
 
-* Domain: **creia.com** · Sender: **team@creia.com** · Instagram: **@drinkcreia**
+* Domain: **creia.com** · Sender: **team@creia.com** · Instagram: **@drinkcreia**. Exact existing packaging masters may retain their already-printed `getcreia.com`; all new copy and reconstructed packaging use `creia.com`
 * From-names: brand emails **Creia**; founder emails **Faith from Creia**, signed Faith, Creia Founding Team (never "Founder")
 * Composition per 8g sachet (label-confirmed July 2026): **5g 200-mesh ultra-micronised creatine monohydrate · 350mg pink Himalayan salt · 60mg magnesium · natural lemon flavouring (Dirty Lime) · citric acid · stevia extract**. "400mg electrolytes" = salt + magnesium, approved. 0 calories, all-natural
 * Spec block: 5g Creatine · 400mg Electrolytes · 0 Calories · All-Natural Ingredients
@@ -55,20 +56,22 @@ Creative follows the Bible. The website follows the Web Design System. When they
 
 ---
 
-## OPS_DOC — parked
+## Archive
 
-Set aside pending rework; predates the July 2026 Bible revisions and contradicts them (auto-fail word lists, no wink/equivalence hooks, no [ASA CHECK] workflow, no trial in the offer architecture, stale CTAs and visual rules, and a funnel-permission system the Bible has since retired). The drift list lives in the OPS_DOC banner.
+`Archive/03_ops_doc_parked.md` preserves the retired ad-system manual for historical reference. It predates the July 2026 Bible revisions and contradicts them. Do not read, retrieve or generate from it unless explicitly reworking that historical system.
 
 ## Gaps and open questions
 
-* **Assets** — Bible §§33–34. Done: product masters, approved wordmarks, installed fonts and licence, safe-zone guides, dimensions, fixed identity colours and current casting reference. Remaining: typography specimen; editable 4:5/9:16 assembly templates; logo finishing; tagged photography and prop library; ad/email, flash, contrast/black-level, pop-prop and anti-reference boards; moodboard mirror.
-* OPS_DOC rework
+* **Assets** — Bible §33. Done: product masters, approved wordmarks, installed fonts and licence, safe-zone guides, dimensions, fixed identity colours and current casting reference. Remaining: typography specimen; editable 4:5/9:16 assembly templates; logo finishing; tagged photography and prop library; ad/email, flash, contrast/black-level, pop-prop and anti-reference boards; moodboard mirror.
+* Future operational agent specification, if needed; build it from the active Bible rather than reviving the archived OPS_DOC
 * Asset errata: two infographics carry factual/typo errors (Bible Part V §28); the site's "two kilos" line needs correcting to 1kg
 * Testimonials — parked by decision; social-proof slot stays empty until real reviews exist
 * Counsel pass on the §27 infographic claims (bulk myth, water/bloat, brain dosing) — currently [ASA CHECK]
 
 ## Changelog
 
+* **July 2026 (Bible rev. ix):** Standard ads, carousels and emails now route through separate production contracts. Copied and scratch ads share one prompts-plus-copy handoff; Zuber owns final typography and standalone wordmark assembly by default, while explicit full-production requests must verify generated imagery before adding text. Duplicate workflow, reference and asset-status rules were consolidated; repo-root paths and missing-reference fallback were corrected.
+* **July 2026 (repository cleanup):** Obsolete handoff guidance was tombstoned, OPS_DOC moved to `Archive/`, the 90-days source-language digest moved to `Corpus/`, web typography mapped to supplied font weights, the asset index became a factual manifest and the mislabelled casting PNG extension was corrected.
 * **July 2026 (Bible rev. viii):** AI ad-production protocol added. Copied ads now return independent 4:5 and 9:16 prompts, outputs when direct generation is available, and an exact copy deck; text modes, native-text gate, deterministic post-production and generation/export QA are live.
 * **July 2026 (repository migration):** Brain migrated to the private GitHub repo zuberseth/creia-brand-brain. Docs and assets now live in one place; git history is the changelog from here on. Linear docs retired as [MOVED] mirrors.
 * **July 2026 (vii):** Bible §29 expanded with the full live 90-days page (creia.com/90-days-with-creia) — phase-by-phase science and quotable lines, "provably" flagged for ad reuse. Asset decisions logged: transparent box renders not needed; logo navy #0D191F confirmed intentional; font licence confirmed; extra casting range skipped for now. Aesop/Byredo line scrubbed from the Web Design System; OPS_DOC drift banner updated (stale reference set, funnel system removal).

@@ -1,93 +1,73 @@
-# Creia Assets — Index
+# Creia Assets — Manifest
 
-Top-level index for the `Documents/Creia Assets` folder. Naming scheme throughout: `creia_<type>_<detail>_<...>.<ext>`, lowercase, `_` between fields, `-` within a field.
+Inventory of assets stored at this repository's root. Naming scheme: `creia_<type>_<detail>_<...>.<ext>`, lowercase, `_` between fields and `-` within a field.
 
----
-
-## Fonts (`/Fonts`)
-
-**Area Extended** — the primary brand typeface. Use it for almost everything.
-**Hubot Sans** — secondary, small-text only.
-
-### Usage rule (canon)
-
-- **Area Extended is the default for all text**, primarily **Bold** (hero, headings, subheadings).
-- **Body / running text** is still **Area Extended**, just a **lower weight** (Regular / Thin) — not Hubot Sans.
-- **Hubot Sans is only for small text or subtext** (captions, fine print, legal, tiny UI labels).
-- **Font sizing is not fixed.** Don't prescribe exact px sizes for creatives — every piece of text must simply be **legible**, and the tool/designer building the creative sets the size. (For reference proportions, see the email visual templates.)
-
-### Files
-
-| File | Weight | Use |
-| -- | -- | -- |
-| `Area_Extended_ExtraBold.otf` | ExtraBold | Heaviest hero display |
-| `Area_Extended_Bold.otf` | Bold | Default — headings, subheadings, most text |
-| `Area_Extended_Regular.otf` | Regular | Body / running text |
-| `Area_Extended_Thin.otf` | Thin | Light display / large-format subtext |
-| `HubotSans-Light.ttf` | Light | Small text / subtext only |
-| `HubotSans-ExtraLight.ttf` | ExtraLight | Small text / subtext only |
+Usage policy lives in the Brand Bible: §12 for production and aspect-ratio rules, §14 for creative colour, and §15 for typography. This manifest records what exists and does not override those sections.
 
 ---
 
-## Colours
+## Fonts (`Fonts/`)
 
-**There is no strict creative palette.** Imagery follows the brand vibe (Bible Part III), not a fixed swatch set. The only fixed colours are the product and logo:
-
-| Element | Colour | Notes |
-| -- | -- | -- |
-| Logo wordmark | navy `#0D191F` (reads black) or white `#FFFFFF` | Use the supplied logo files; don't recolour |
-| Sachet | silver / chrome metallic | As in the product asset files; not a flat hex |
-| Box | pure white `#FFFFFF` ground, black `#000000` text | As in the product asset files |
-
-Creative imagery (ads, email imagery, social) has **no strict palette** beyond following the brand vibe. Emails are built in Canva (primarily white) via the connector — no palette spec needed here.
+| Repository-relative path | Weight |
+| -- | -- |
+| `Fonts/Hero, headings, subheadings, body text/fonnts.com-Area_Extended_ExtraBold.otf` | Area Extended ExtraBold |
+| `Fonts/Hero, headings, subheadings, body text/fonnts.com-Area_Extended_Bold.otf` | Area Extended Bold |
+| `Fonts/Hero, headings, subheadings, body text/fonnts.com-Area_Extended_Regular.otf` | Area Extended Regular |
+| `Fonts/Hero, headings, subheadings, body text/fonnts.com-Area_Extended_Thin.otf` | Area Extended Thin |
+| `Fonts/Subtext/HubotSans-Light.ttf` | Hubot Sans Light |
+| `Fonts/Subtext/HubotSans-ExtraLight.ttf` | Hubot Sans ExtraLight |
 
 ---
 
-## Dimensions
+## Fixed asset colours
+
+| Element | Recorded colour |
+| -- | -- |
+| Logo wordmark | Navy `#0D191F` or white `#FFFFFF` |
+| Sachet | Silver/chrome metallic, as rendered in the product masters |
+| Box | White `#FFFFFF` ground with black `#000000` text, as rendered in the product masters |
+
+---
+
+## Physical dimensions
 
 | Item | Size |
 | -- | -- |
 | Box | 12.5 cm H × 11 cm W × 8.5 cm D (125 × 110 × 85 mm) |
-| Sachet | 120 mm × 35 mm × 10 mm (L × W × D, stick) |
+| Sachet | 120 mm × 35 mm × 10 mm (L × W × D) |
 
 ---
 
-## Logo (`/Logo`)
+## Logo (`Logo/`)
 
-The "creia" wordmark (reversed-R script). Vector (SVG) + transparent PNG, black and white.
-
-| File | Format | Colour | Notes |
+| File | Format | Colour | Dimensions |
 | -- | -- | -- | -- |
-| `creia_logo_wordmark_black.svg` | SVG (vector) | black | Fill is navy `#0D191F` (the brand logo navy), reads as black. Scale freely |
-| `creia_logo_wordmark_black_transparent.png` | PNG, alpha | black | 6405×1917, transparent bg |
-| `creia_logo_wordmark_white.svg` | SVG (vector) | white `#FFFFFF` | For dark grounds |
-| `creia_logo_wordmark_white_transparent.png` | PNG, alpha | white | 6405×1917, transparent bg |
-
-*Flag to confirm: the "black" logo vector is filled navy `#0D191F`, not true black `#171717`. It reads black and matches the on-sachet navy. Confirm this is intended as the master wordmark colour, or supply a true-black variant.*
+| `creia_logo_wordmark_black.svg` | SVG | Navy `#0D191F` | Vector |
+| `creia_logo_wordmark_black_transparent.png` | PNG with alpha | Navy `#0D191F` | 6405×1917 |
+| `creia_logo_wordmark_white.svg` | SVG | White `#FFFFFF` | Vector |
+| `creia_logo_wordmark_white_transparent.png` | PNG with alpha | White `#FFFFFF` | 6405×1917 |
 
 ---
 
-## Safe zones + aspect ratios (`/Safe zones + Aspect ratios`)
+## Safe zones and aspect ratios (`Safe zones + Aspect ratios/`)
 
-Text-safe-zone templates. Grey margin = full bleed / unsafe area; white card = keep text inside it. **Every creative must be produced in both variants — post and story.**
+These are text-safe-zone guide files. Their use is governed by Bible §§12 and 12A.
 
 | File | Placement | Ratio |
 | -- | -- | -- |
-| `creia_safezone_post_4x5.png` | Feed / post ads | 4:5 (1080×1350) |
-| `creia_safezone_story_9x16.png` | Story / reel ads | 9:16 (1080×1920) |
+| `creia_safezone_post_4x5.png` | Feed/post ad | 4:5 (1080×1350) |
+| `creia_safezone_story_9x16.png` | Story/reel ad | 9:16 (1080×1920) |
 
 ---
 
-## Casting (`/Casting`)
+## Casting (`Casting/`)
 
-Approved on-spec model references the pipeline may generate toward (casting spec: Bible Part III §17). Scheme: `creia_casting_<name>_<nn|digitals>.<ext>`.
-
-| Model | Files | Fit |
+| Subject | Files | Recorded details |
 | -- | -- | -- |
-| Faith Charnock — **founder** (Fabbrica Milano) | `creia_casting_faith-charnock_digitals.pdf` + `_01`–`_05.jpg` | Strong. 173cm, lean/long/narrow, editorial face, bare-faced, natural dark hair, not smiling. In age range, rights cleared. **This is the founder** — a real face for the brand, not just a casting proxy |
+| Faith Charnock, founder | `Casting/creia_casting_faith-charnock_digitals.pdf`; `Casting/creia_casting_faith-charnock_01.jpg`; `Casting/creia_casting_faith-charnock_02.jpg`; `Casting/creia_casting_faith-charnock_03.jpg`; `Casting/creia_casting_faith-charnock_04.jpg`; `Casting/creia_casting_faith-charnock_05.png` | 173 cm; reference rights cleared |
 
 ---
 
-## Product (`/Product`)
+## Product (`Product/`)
 
-Master product cutouts. See `Product/creia_assets_manifest.md` for the full list and scheme. Covers single sachet (transparent), trial 5-sachet, 30-day box (4 views), 90-day 3-box.
+Master product cutouts covering a single sachet, the five-sachet trial, four 30-day box views and the 90-day three-box pack. The complete file list, naming scheme and packaging-domain exception live in `Product/creia_assets_manifest.md`.

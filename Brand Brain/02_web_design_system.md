@@ -16,8 +16,8 @@ The two are *meant* to differ in places. The website is the calmer surface. Crea
 
 When the two appear to conflict, scope decides. The website follows this document. Creative follows the Bible. Examples of the intentional split:
 
-* Body text on the **website** uses Hubot Sans Variable. **Creative** body type (packaging, print, campaign layouts) uses Area Extended at regular weight.
-* Website palette is intentionally neutral-only (#FAFAFA → #171717). **Creative** uses the full palette: black, chrome, flash white, blood red, navy, plus the sanctioned pop set.
+* Body text on the **website** uses Hubot Sans Light. **Creative** body type (packaging, print, campaign layouts) uses Area Extended at regular weight.
+* Website palette is intentionally neutral-only (#FAFAFA → #171717). Creative colour follows **Brand Bible §14**; do not infer creative colour rules from the website palette.
 * Website mood is "Apple-inspired liquid glass — translucent layers, soft blurs, restrained depth." **Creative** mood is "dark, high-contrast, direct-flash, it-girl," with a toy-ish pop register.
 
 ---
@@ -63,37 +63,40 @@ All colours use **semantic tokens** defined in `index.css` and `tailwind.config.
 
 | Token | Font Family | Usage |
 | -- | -- | -- |
-| `font-area` | Area Extended | All headings, buttons, labels, prices, nav links |
+| `font-area` | Area Extended (Thin, Regular, Bold, ExtraBold supplied) | All headings, buttons, labels, prices, nav links |
 | `font-display` | Area Extended (alias) | Same as font-area — use interchangeably |
-| `font-body` | Hubot Sans Variable | Body paragraphs, descriptions, newsletter input |
+| `font-body` | Hubot Sans (ExtraLight and Light supplied) | Body paragraphs, descriptions, newsletter input; Light is the default |
 
 > **Instrument Serif is deprecated.** Do not use in any new components.
 
 ### Font Weights
 
-| Weight | Usage |
-| -- | -- |
-| `font-medium` | Body/descriptive paragraphs (Hubot Sans only) |
-| `font-semibold` | Headings, buttons, labels, prices, nav (Area only) |
-| `font-bold` | Large feature headings only (e.g. VideoSection H2) |
+| Weight | Supplied face | Usage |
+| -- | -- | -- |
+| `font-extralight` | Hubot Sans ExtraLight | Intentionally quieter supporting copy only |
+| `font-light` | Hubot Sans Light | Default body and descriptive paragraphs |
+| `font-thin` | Area Extended Thin | Deliberately light display treatments only |
+| `font-normal` | Area Extended Regular | Fine print and regular-weight Area text |
+| `font-bold` | Area Extended Bold | Headings, buttons, labels, prices, nav, feature headings |
+| `font-extrabold` | Area Extended ExtraBold | Extra-emphasis display treatments only |
 
 ### Approved Font Sizes
 
 | Class | Px | Font | Weight | Usage |
 | -- | -- | -- | -- | -- |
-| `text-[9px]` | 9 | area | semibold | Save badges only (exception to 12px minimum) |
+| `text-[9px]` | 9 | area | bold | Save badges only (exception to 12px minimum) |
 | `text-[10px]` | 10 | area | normal | Fine print (subscription details, strikethrough prices) |
-| `text-[11px]` | 11 | area | semibold | Mobile button text, widget labels (scales to text-xs on sm+) |
-| `text-xs` (12px) | 12 | area | semibold | Buttons, nav links, labels, per-sachet prices, shipping notes |
-| `text-sm` (14px) | 14 | body | medium | Ingredient descriptions, newsletter feedback, helper text |
-| `text-base` (16px) | 16 | body | medium | Standard body paragraphs (Benefits, TrustBar) |
-| `text-lg` (18px) | 18 | area | semibold | Sub-card titles (WhatsInside), TrustBar H3 (mobile), footer tagline (sm+) |
-| `text-xl` (20px) | 20 | body | medium | Feature body text (FeelTheDifference, VideoSection body) |
-| `text-2xl` (24px) | 24 | area | semibold | Card titles (ProductSection H3, BenefitCards mobile) |
-| `text-3xl` (30px) | 30 | area | semibold | Section titles H2 (mobile), BenefitCards H3 (sm+) |
-| `text-5xl` (48px) | 48 | area | semibold | Section titles H2 (sm+), Hero H1 (mobile fallback) |
-| `text-6xl` (60px) | 60 | area | semibold | Hero H1 (sm breakpoint) |
-| `text-7xl` (72px) | 72 | area | semibold | Hero H1 (lg+) |
+| `text-[11px]` | 11 | area | bold | Mobile button text, widget labels (scales to text-xs on sm+) |
+| `text-xs` (12px) | 12 | area | bold | Buttons, nav links, labels, per-sachet prices, shipping notes |
+| `text-sm` (14px) | 14 | body | light | Ingredient descriptions, newsletter feedback, helper text |
+| `text-base` (16px) | 16 | body | light | Standard body paragraphs (Benefits, TrustBar) |
+| `text-lg` (18px) | 18 | area | bold | Sub-card titles (WhatsInside), TrustBar H3 (mobile), footer tagline (sm+) |
+| `text-xl` (20px) | 20 | body | light | Feature body text (FeelTheDifference, VideoSection body) |
+| `text-2xl` (24px) | 24 | area | bold | Card titles (ProductSection H3, BenefitCards mobile) |
+| `text-3xl` (30px) | 30 | area | bold | Section titles H2 (mobile), BenefitCards H3 (sm+) |
+| `text-5xl` (48px) | 48 | area | bold | Section titles H2 (sm+), Hero H1 (mobile fallback) |
+| `text-6xl` (60px) | 60 | area | bold | Hero H1 (sm breakpoint) |
+| `text-7xl` (72px) | 72 | area | bold | Hero H1 (lg+) |
 
 **Rules:**
 
@@ -126,14 +129,14 @@ All colours use **semantic tokens** defined in `index.css` and `tailwind.config.
 ### Hero H1
 
 ```
-font-area font-semibold tracking-tight text-neutral-900
+font-area font-bold tracking-tight text-neutral-900
 text-4xl sm:text-6xl lg:text-7xl
 ```
 
 ### Section H2 (standard)
 
 ```
-font-area font-semibold tracking-tight text-neutral-900
+font-area font-bold tracking-tight text-neutral-900
 text-3xl sm:text-5xl
 ```
 
@@ -147,14 +150,14 @@ text-3xl sm:text-5xl lg:text-5xl
 ### Card H3 (BenefitCards, ProductSection)
 
 ```
-font-area font-semibold tracking-tight text-neutral-900
+font-area font-bold tracking-tight text-neutral-900
 text-2xl sm:text-3xl
 ```
 
 ### Sub-card H4 (WhatsInside)
 
 ```
-font-area font-semibold tracking-tight text-neutral-900
+font-area font-bold tracking-tight text-neutral-900
 text-lg sm:text-xl
 ```
 
@@ -165,25 +168,25 @@ text-lg sm:text-xl
 ### Standard body paragraph
 
 ```
-font-body text-base font-medium leading-relaxed text-neutral-900
+font-body text-base font-light leading-relaxed text-neutral-900
 ```
 
 ### Feature body paragraph (larger)
 
 ```
-font-body text-xl font-medium leading-relaxed text-neutral-900 sm:text-2xl lg:text-3xl
+font-body text-xl font-light leading-relaxed text-neutral-900 sm:text-2xl lg:text-3xl
 ```
 
 ### Description / ingredient body
 
 ```
-font-body text-sm font-medium leading-relaxed text-neutral-900
+font-body text-sm font-light leading-relaxed text-neutral-900
 ```
 
 ### Helper / secondary text
 
 ```
-font-body text-sm font-medium text-neutral-500
+font-body text-sm font-light text-neutral-500
 ```
 
 ---
@@ -194,7 +197,7 @@ font-body text-sm font-medium text-neutral-500
 
 ```
 w-full glass-strong glass-inverted-hover py-3.5
-font-area font-semibold text-[11px] sm:text-xs uppercase
+font-area font-bold text-[11px] sm:text-xs uppercase
 tracking-[0.1em] sm:tracking-[0.15em] text-neutral-900
 transition-all duration-300
 border-radius: 50px (via style prop)
@@ -204,7 +207,7 @@ border-radius: 50px (via style prop)
 
 ```
 inline-block glass glass-hover px-5 sm:px-8 py-3
-font-area font-semibold text-[11px] sm:text-xs uppercase
+font-area font-bold text-[11px] sm:text-xs uppercase
 tracking-[0.1em] sm:tracking-[0.15em] text-neutral-900
 transition-all duration-300 whitespace-nowrap
 border-radius: 50px (via style prop)
@@ -214,7 +217,7 @@ border-radius: 50px (via style prop)
 
 ```
 glass-strong glass-hover px-8 py-3
-font-area text-xs font-semibold uppercase tracking-[0.15em] text-neutral-900
+font-area text-xs font-bold uppercase tracking-[0.15em] text-neutral-900
 transition-all
 border-radius: 50px (via style prop)
 ```
@@ -231,7 +234,7 @@ border-radius: 50px (via style prop)
 
 ```
 glass-inverted
-font-area font-semibold text-[11px] sm:text-xs uppercase
+font-area font-bold text-[11px] sm:text-xs uppercase
 tracking-[0.1em] sm:tracking-[0.15em]
 border-radius: 50px (via style prop)
 padding: 16px 12px (via style prop)
@@ -241,7 +244,7 @@ padding: 16px 12px (via style prop)
 
 ```
 glass glass-hover
-font-area font-semibold text-[11px] sm:text-xs uppercase
+font-area font-bold text-[11px] sm:text-xs uppercase
 tracking-[0.1em] sm:tracking-[0.15em]
 border-radius: 50px (via style prop)
 padding: 16px 12px (via style prop)
@@ -410,7 +413,7 @@ border-radius: 16px
 Menu items:
 
 ```
-font-area text-[11px] sm:text-xs font-semibold uppercase
+font-area text-[11px] sm:text-xs font-bold uppercase
 tracking-[0.1em] sm:tracking-[0.15em] text-neutral-900
 px-4 py-2.5 focus:bg-neutral-100 rounded-xl
 ```
@@ -420,10 +423,10 @@ px-4 py-2.5 focus:bg-neutral-100 rounded-xl
 ## 13. Footer
 
 * Border top: `border-t border-neutral-200`
-* Brand tagline: `font-body text-base font-medium text-neutral-900 sm:text-lg`
-* Newsletter input: glass pill (50px radius), `font-body text-sm`
+* Brand tagline: `font-body text-base font-light text-neutral-900 sm:text-lg`
+* Newsletter input: glass pill (50px radius), `font-body font-light text-sm`
 * Submit icon button: `glass-strong glass-hover` inside pill
-* Instagram link: `font-area text-xs font-semibold uppercase tracking-[0.15em]`
+* Instagram link: `font-area text-xs font-bold uppercase tracking-[0.15em]`
 * Full-width logo at bottom: `<img className="w-full" />`
 
 ---
@@ -433,23 +436,23 @@ px-4 py-2.5 focus:bg-neutral-100 rounded-xl
 ### CollapsibleSection
 
 * Section title + chevron toggle
-* Title: `font-area text-3xl font-semibold tracking-tight text-neutral-900 sm:text-5xl`
+* Title: `font-area text-3xl font-bold tracking-tight text-neutral-900 sm:text-5xl`
 * Chevron: `h-5 w-5 text-neutral-500`, rotates 180° on open
 * Content animates height with Framer Motion
 
 ### Testimonials Carousel
 
 * Centered text, max-w-3xl
-* Quote: `font-body text-xl font-medium leading-relaxed text-neutral-900 sm:text-2xl lg:text-3xl`
+* Quote: `font-body text-xl font-light leading-relaxed text-neutral-900 sm:text-2xl lg:text-3xl`
 * Navigation: glass icon buttons with chevrons
-* Counter: `font-area text-xs font-semibold tracking-[0.15em] text-neutral-900`
+* Counter: `font-area text-xs font-bold tracking-[0.15em] text-neutral-900`
 
 ### TrustBar
 
 * 2-column grid (`sm:grid-cols-2`)
 * Icon: `h-6 w-6 text-neutral-500`
-* Title: `font-area text-lg font-semibold tracking-tight text-neutral-900 sm:text-xl`
-* Body: `font-body text-base font-medium leading-relaxed text-neutral-900`
+* Title: `font-area text-lg font-bold tracking-tight text-neutral-900 sm:text-xl`
+* Body: `font-body text-base font-light leading-relaxed text-neutral-900`
 
 ---
 
@@ -457,8 +460,8 @@ px-4 py-2.5 focus:bg-neutral-100 rounded-xl
 
  1. **Never add a new font size** — pick the closest from the table above.
  2. **Always use neutral-\* classes** for colours — never raw hex/rgb in components.
- 3. **All buttons** use `font-area font-semibold uppercase` with appropriate tracking.
- 4. **All section titles** use `font-area font-semibold tracking-tight`.
+ 3. **All buttons** use `font-area font-bold uppercase` with appropriate tracking.
+ 4. **All section titles** use `font-area font-bold tracking-tight`.
  5. **No italics** — ever.
  6. **Sentence case** for all text. `uppercase` only on buttons, nav, and labels.
  7. **Minimum text size: 12px** — only save badges (9px) and fine print (10px) are exceptions.

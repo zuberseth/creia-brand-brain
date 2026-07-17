@@ -1,14 +1,14 @@
-# CREIA Operations: The Ad System
+# [ARCHIVED] CREIA Operations: The Ad System
 
 *How the agent operates*
 
-> **STATUS: PARKED — July 2026. Do not build or generate from this document.**
+> **STATUS: ARCHIVED — July 2026. Do not build or generate from this document.**
 >
 > This manual predates the July 2026 Brand Bible revisions and contradicts them. It is retained as the starting point for a future rework, not as a live instruction set. Until then, the Bible is authoritative. Known drift to resolve at rework: the copy-generator prompt hard-codes banned words as auto-fail (including "clean"/"pure", now carved out); exclamation marks and rhetorical questions are auto-fail (the Bible now allows "Otw!" transactionally and "Can't commit?" as a headline hook); the wink and concrete-equivalence hooks are missing; there is no [ASA CHECK] claims workflow; the offer architecture has £49.99 but no free trial (now the lead offer); the CTA list ("Shop now") conflicts with Bible guidance; the visual rules lack the pop set, toy-ish staging, and the Nothing reference; the reference set and Byredo test are stale (Byredo/Skims retired July 2026 — Nothing + David are the copy references, the Byredo test is now the Nothing/David test); the funnel-permission system itself was removed from the Bible (case-by-case now).
 
 This is the operations manual for the ad agent. It specifies the three-layer funnel, the ad genome schema, the generation pipeline, the layer-aware reward model, the measurement framework, and the approval gates.
 
-The companion document, `BRAND_BIBLE.md`, defines what Creia is. That document governs every aesthetic and voice decision referenced here.
+The active companion document is `../Brand Brain/01_brand_bible_creative.md`. It governs every aesthetic, voice and production decision; this archived manual does not.
 
 ## Current scope (what the agent actually ships)
 
