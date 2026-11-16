@@ -42,7 +42,7 @@ Creative follows the Bible. The website follows the Web Design System. When they
 * Composition per 8g sachet (label-confirmed July 2026): **5g 200-mesh ultra-micronised creatine monohydrate · 350mg pink Himalayan salt · 60mg magnesium · natural lemon flavouring (Dirty Lime) · citric acid · stevia extract**. "400mg electrolytes" = salt + magnesium, approved. 0 calories, all-natural
 * Spec block: 5g Creatine · 400mg Electrolytes · 0 Calories · All-Natural Ingredients
 * Full pricing: 30-day **£49.99 one-time / £39.99 sub**; 3-month **£129.99 one-time / £79.99 sub**. Email prices are discounted offers, never list
-* Trial: 5 days, 5 sachets, **free**, no auto-subscribe, **£3.95 postage** at checkout (kept out of email copy). 10-day trial £8.95, free shipping
+* Trial: 5 days, 5 sachets, **free**, no auto-subscribe, **£4.95 postage** at checkout (kept out of email copy). 10-day trial £8.95, free shipping
 * Beef equivalence: **one kilo** of raw beef = one sachet's 5g (the site's "two kilos" is being corrected). High-performing fact
 * Protocol: one sachet a day in cold water; flexible dosing to two sachets on demanding days ("One sachet a day for extra energy. Two a day to turn into megamind.")
 * Dimensions: box 12.5 × 11 × 8.5 cm (125 × 110 × 85 mm); sachet 120 × 35 × 10 mm
@@ -71,6 +71,7 @@ Creative follows the Bible. The website follows the Web Design System. When they
 
 ## Changelog
 
+* **November 2026:** 5-day trial postage changed from £3.95 to £4.95 on 16 Nov 2026 (23:11 GMT), on the Shopify rate and on the /trial page. The pricing line in this index and the 5-day trial line in the Bible are updated. The 10-day trial stays £8.95 with free shipping.
 * **August 2026:** Testimonials unparked. creia.com has carried a 161-review placeholder dataset, the 4.91/5 "Trusted by 1,000+ customers" banner and review cards under the buy widgets since 7 and 10 Aug 2026; real reviews via Judge.me on the Shopify thank-you page will replace the placeholder set. Gaps entry updated.
 * **July 2026 (Bible rev. ix):** Standard ads, carousels and emails now route through separate production contracts. Copied and scratch ads share one prompts-plus-copy handoff; Zuber owns final typography and standalone wordmark assembly by default, while explicit full-production requests must verify generated imagery before adding text. Creative-rule scope is now defined by concept, frame and batch, with a narrow declared-deviation protocol and fixed source data. Duplicate workflow, reference and asset-status rules were consolidated; repo-root paths and missing-reference fallback were corrected.
 * **July 2026 (repository cleanup):** Obsolete handoff guidance was tombstoned, OPS_DOC moved to `Archive/`, the 90-days source-language digest moved to `Corpus/`, web typography mapped to supplied font weights, the asset index became a factual manifest and the mislabelled casting PNG extension was corrected.
