@@ -420,7 +420,7 @@ Nothing else in the sachet. "5g creatine, 400mg electrolytes, lime flavour. Noth
 
 ## 21. Trial and offer architecture
 
-* **5-day trial:** 5 sachets, free (worth £8.95), no auto-subscribe, **£3.95 postage** at checkout. Keep the postage out of email copy unless necessary. The settled line: "5 day free trial. No auto-subscribe. Because we know you'll be back." The trial is a product promise, not a price cut — it may headline where a discount never would. It's the natural home of the wink.
+* **5-day trial:** 5 sachets, free (worth £8.95), no auto-subscribe, **£4.95 postage** at checkout. Keep the postage out of email copy unless necessary. The settled line: "5 day free trial. No auto-subscribe. Because we know you'll be back." The trial is a product promise, not a price cut — it may headline where a discount never would. It's the natural home of the wink.
 * **10-day trial:** £8.95 (5 day trial + 5 free days), free shipping, no subscription.
 * **Post-purchase upgrades** (thank-you page redirect): 5-day trial → /upgrade; 10-day trial → /upgrade-30. Upgrade offers per the upsell flow.
 * Scarcity: the live trial counter (claimed/total) is real inventory scarcity — permitted. Fake countdowns are not.
